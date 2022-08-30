@@ -1,5 +1,0 @@
--- CreateTable
-CREATE TABLE "Trajet" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "etapes" TEXT NOT NULL
-);

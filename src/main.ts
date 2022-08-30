@@ -1,3 +1,5 @@
+import { Logger } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
@@ -9,6 +11,11 @@ async function bootstrap() {
   // Open Api Setup
   const config = new DocumentBuilder()
     .setTitle('Nav Ouest APi')
+    .setContact(
+      'Nav Ouest',
+      'https://github.com/modulo-project/navouest-back',
+      '',
+    )
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
@@ -17,6 +24,10 @@ async function bootstrap() {
   const prismaService = app.get(PrismaService);
   await prismaService.enableShutdownHooks(app);
 
-  await app.listen(3000);
+  const port = app.get(ConfigService).get('PORT');
+
+  await app.listen(port, () => {
+    Logger.log(`🚀🚀🚀 App is launched on port ${port} 🚀🚀🚀`);
+  });
 }
 bootstrap();

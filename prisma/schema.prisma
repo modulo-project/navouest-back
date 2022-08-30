@@ -5,23 +5,32 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// generator docs {
+//   provider = "node node_modules/prisma-docs-generator"
+//   output = "../src/prisma-generated/docs"
+// }
+
+// generator dbml {
+//   provider   = "prisma-dbml-generator"
+//   output     = "../src/prisma-generated/dbml"
+//   outputName = "schema.dbml"
+// }
+
 generator nestjsDto {
   provider                        = "prisma-generator-nestjs-dto"
-  output                          = "../src/generated/nestjs-dto"
+  output                          = "../src/prisma-generated/"
   outputToNestJsResourceStructure = "false"
   exportRelationModifierClasses   = "true"
   reExport                        = "false"
   createDtoPrefix                 = "Create"
   updateDtoPrefix                 = "Update"
   dtoSuffix                       = "Dto"
-  entityPrefix                    = ""
-  entitySuffix                    = ""
   fileNamingStyle                 = "camel"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file: ./test.db"
+  provider = "mysql"
+  url      = env("DATABASE_URL")
 }
 
 model Client {
@@ -29,9 +38,66 @@ model Client {
   name  String?
   email String?
   phone String?
+  trips Trip[]
 }
 
-model Trajet {
-  id     Int      @id @default(autoincrement())
-  etapes String
+model Trip {
+  id       Int     @id @default(autoincrement())
+  steps    Step[]
+  Client   Client? @relation(fields: [clientId], references: [id])
+  clientId Int?
+}
+
+model Step {
+  id               Int                @id @default(autoincrement())
+  trip             Trip?              @relation(fields: [tripId], references: [id])
+  tripId           Int?
+  startedAt        DateTime
+  endedAt          DateTime
+  from             String
+  to               String
+  commentary       String?
+  passengersCount  Int?
+  driverAndVehicle DriverAndVehicle[]
+}
+
+model DriverAndVehicle {
+  id        Int      @id @default(autoincrement())
+  step      Step?    @relation(fields: [stepId], references: [id])
+  stepId    Int?
+  vehicle   Vehicle? @relation(fields: [vehicleId], references: [id])
+  driver    Driver?  @relation(fields: [driverId], references: [id])
+  vehicleId Int
+  driverId  Int
+}
+
+model Warehouse {
+  id       Int       @id @default(autoincrement())
+  adress   String
+  vehicles Vehicle[]
+  Driver   Driver[]
+}
+
+model Vehicle {
+  id               Int                @id @default(autoincrement())
+  model            String
+  capacity         Int
+  Warehouse        Warehouse?         @relation(fields: [warehouseId], references: [id])
+  warehouseId      Int?
+  DriverAndVehicle DriverAndVehicle[]
+}
+
+model Driver {
+  id               Int                @id @default(autoincrement())
+  name             String
+  status           Status             @default(ACTIVE)
+  warehouse        Warehouse?         @relation(fields: [warehouseId], references: [id])
+  warehouseId      Int
+  DriverAndVehicle DriverAndVehicle[]
+}
+
+// Les enums n'existent pas avec SQLITE
+enum Status {
+  ACTIVE
+  INACTIVE
 }
