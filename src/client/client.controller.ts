@@ -8,6 +8,7 @@ import {
   Delete,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
+import { Client } from '@prisma/client';
 import { CreateClientDto } from 'src/prisma-generated/create-client.dto';
 import { UpdateClientDto } from 'src/prisma-generated/update-client.dto';
 import { ClientService } from './client.service';
@@ -18,27 +19,32 @@ export class ClientController {
   constructor(private readonly clientService: ClientService) {}
 
   @Post()
-  create(@Body() createClientDto: CreateClientDto) {
-    return this.clientService.create(createClientDto);
+  async create(
+    @Body() createClientDto: CreateClientDto,
+  ): Promise<Client | null> {
+    return await this.clientService.create(createClientDto);
   }
 
   @Get()
-  findAll() {
-    return this.clientService.findAll();
+  async findAll(): Promise<Client[] | null> {
+    return await this.clientService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: number) {
-    return this.clientService.findOne(id);
+  async findOne(@Param('id') id: number): Promise<Client | null> {
+    return await this.clientService.findOne(id);
   }
 
   @Patch(':id')
-  update(@Param('id') id: number, @Body() updateClientDto: UpdateClientDto) {
-    return this.clientService.update(id, updateClientDto);
+  async update(
+    @Param('id') id: number,
+    @Body() updateClientDto: UpdateClientDto,
+  ): Promise<Client | null> {
+    return await this.clientService.update(id, updateClientDto);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: number) {
-    return this.clientService.remove(id);
+  async remove(@Param('id') id: number): Promise<Client | null> {
+    return await this.clientService.remove(id);
   }
 }
