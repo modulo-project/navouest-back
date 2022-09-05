@@ -5,6 +5,9 @@
   "author": "Anthony <8291454-ahelliet@users.noreply.gitlab.com>",
   "private": true,
   "license": "UNLICENSED",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "scripts": {
     "prepare": "husky install",
     "commit": "git-cz",
@@ -24,10 +27,11 @@
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
+    "@nestjs/config": "^2.2.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^8.0.0",
-    "@prisma/client": "4.2.1",
+    "@prisma/client": "^4.3.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
@@ -56,7 +60,7 @@
     "jest": "28.0.3",
     "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
-    "prisma": "^4.2.1",
+    "prisma": "^4.3.1",
     "source-map-support": "^0.5.20",
     "supertest": "^6.1.3",
     "ts-jest": "28.0.1",

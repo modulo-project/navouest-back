@@ -20,18 +20,33 @@ generator nestjsDto {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file: ./test.db"
+  provider = "mysql"
+  url      = env("DATABASE_URL")
 }
 
-model Client {
+// model Client {
+//   id    Int     @id @default(autoincrement())
+//   name  String?
+//   email String?
+//   phone String?
+//   // trips Trip[]
+// }
+
+// model Trip {
+//   id     Int      @id @default(autoincrement())
+//   // steps Step[]
+// }
+
+model Driver {
   id    Int     @id @default(autoincrement())
-  name  String?
-  email String?
-  phone String?
+  name  String
+  status Boolean   @default(false)
+  warehouseId Int?
+  Warehouse Warehouse?  @relation(fields: [warehouseId], references: [id])
 }
 
-model Trajet {
-  id     Int      @id @default(autoincrement())
-  etapes String
+model Warehouse {
+  id    Int     @id @default(autoincrement())
+  adresse String   @db.VarChar(255)
+  driver Driver[]  
 }
