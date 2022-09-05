@@ -1,0 +1,85 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table Client {
+  id Int [pk, increment]
+  name String
+  email String
+  phone String
+  trips Trip [not null]
+}
+
+Table Trip {
+  id Int [pk, increment]
+  steps Step [not null]
+  Client Client
+  clientId Int
+}
+
+Table Step {
+  id Int [pk, increment]
+  trip Trip
+  tripId Int
+  startedAt DateTime [not null]
+  endedAt DateTime [not null]
+  from String [not null]
+  to String [not null]
+  commentary String
+  passengersCount Int
+  driverAndVehicle DriverAndVehicle [not null]
+}
+
+Table DriverAndVehicle {
+  id Int [pk, increment]
+  step Step
+  stepId Int
+  vehicle Vehicle
+  driver Driver
+  vehicleId Int [not null]
+  driverId Int [not null]
+}
+
+Table Warehouse {
+  id Int [pk, increment]
+  adress String [not null]
+  vehicles Vehicle [not null]
+  Driver Driver [not null]
+}
+
+Table Vehicle {
+  id Int [pk, increment]
+  model String [not null]
+  capacity Int [not null]
+  Warehouse Warehouse
+  warehouseId Int
+  DriverAndVehicle DriverAndVehicle [not null]
+}
+
+Table Driver {
+  id Int [pk, increment]
+  name String [not null]
+  status Status [not null, default: 'ACTIVE']
+  warehouse Warehouse
+  warehouseId Int [not null]
+  DriverAndVehicle DriverAndVehicle [not null]
+}
+
+Enum Status {
+  ACTIVE
+  INACTIVE
+}
+
+Ref: Trip.clientId > Client.id
+
+Ref: Step.tripId > Trip.id
+
+Ref: DriverAndVehicle.stepId > Step.id
+
+Ref: DriverAndVehicle.vehicleId > Vehicle.id
+
+Ref: DriverAndVehicle.driverId > Driver.id
+
+Ref: Vehicle.warehouseId > Warehouse.id
+
+Ref: Driver.warehouseId > Warehouse.id

@@ -4,6 +4,6 @@ import { Client } from './client.entity';
 export class Trip {
   id: number;
   steps?: Step[];
-  Client?: Client | null;
+  client?: Client | null;
   clientId: number | null;
 }

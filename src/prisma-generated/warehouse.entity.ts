@@ -5,5 +5,5 @@ export class Warehouse {
   id: number;
   adress: string;
   vehicles?: Vehicle[];
-  Driver?: Driver[];
+  driver?: Driver[];
 }

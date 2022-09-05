@@ -5,7 +5,7 @@ export class Vehicle {
   id: number;
   model: string;
   capacity: number;
-  Warehouse?: Warehouse | null;
+  warehouse?: Warehouse | null;
   warehouseId: number | null;
-  DriverAndVehicle?: DriverAndVehicle[];
+  driverAndVehicle?: DriverAndVehicle[];
 }

@@ -8,5 +8,5 @@ export class Driver {
   status: Status;
   warehouse?: Warehouse | null;
   warehouseId: number | null;
-  DriverAndVehicle?: DriverAndVehicle[];
+  driverAndVehicle?: DriverAndVehicle[];
 }
