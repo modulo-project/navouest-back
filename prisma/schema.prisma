@@ -24,29 +24,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// model Client {
-//   id    Int     @id @default(autoincrement())
-//   name  String?
-//   email String?
-//   phone String?
-//   // trips Trip[]
-// }
-
-// model Trip {
-//   id     Int      @id @default(autoincrement())
-//   // steps Step[]
-// }
-
 model Driver {
   id    Int     @id @default(autoincrement())
   name  String
   status Boolean   @default(false)
-  warehouseId Int?
+  warehouseId Int
   Warehouse Warehouse?  @relation(fields: [warehouseId], references: [id])
 }
 
 model Warehouse {
   id    Int     @id @default(autoincrement())
   adresse String   @db.VarChar(255)
-  driver Driver[]  
+  Driver Driver[]  
 }
