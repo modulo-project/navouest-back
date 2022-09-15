@@ -2,13 +2,25 @@ import { Injectable } from '@nestjs/common';
 import { CreateStepDto } from 'src/prisma-generated/create-step.dto';
 import { UpdateStepDto } from 'src/prisma-generated/update-step.dto';
 import { PrismaService } from 'src/prisma/prisma.service';
+import { GoogleService } from '../google/google.service';
 
 @Injectable()
 export class StepService {
-  constructor(private readonly prismaService: PrismaService) {}
+  constructor(
+    private readonly prismaService: PrismaService,
+    private googleService: GoogleService,
+  ) {}
 
-  create(createStepDto: CreateStepDto) {
-    return this.prismaService.step.create({ data: createStepDto });
+  async create(createStepDto: CreateStepDto) {
+    const newStep = createStepDto;
+
+    newStep.distance = await this.googleService.getDistance(
+      createStepDto.from,
+      createStepDto.to,
+    );
+
+    await this.prismaService.step.create({ data: newStep });
+    return newStep;
   }
 
   findAll() {

@@ -44,7 +44,7 @@ model Client {
 model Trip {
   id       Int     @id @default(autoincrement())
   steps    Step[]
-  Client   Client? @relation(fields: [clientId], references: [id])
+  client   Client? @relation(fields: [clientId], references: [id])
   clientId Int?
 }
 
@@ -56,6 +56,7 @@ model Step {
   endedAt          DateTime
   from             String
   to               String
+  distance         Float?
   commentary       String?
   passengersCount  Int?
   driverAndVehicle DriverAndVehicle[]
@@ -75,16 +76,16 @@ model Warehouse {
   id       Int       @id @default(autoincrement())
   adress   String
   vehicles Vehicle[]
-  Driver   Driver[]
+  driver   Driver[]
 }
 
 model Vehicle {
   id               Int                @id @default(autoincrement())
   model            String
   capacity         Int
-  Warehouse        Warehouse?         @relation(fields: [warehouseId], references: [id])
+  warehouse        Warehouse?         @relation(fields: [warehouseId], references: [id])
   warehouseId      Int?
-  DriverAndVehicle DriverAndVehicle[]
+  driverAndVehicle DriverAndVehicle[]
 }
 
 model Driver {
@@ -93,7 +94,7 @@ model Driver {
   status           Status             @default(ACTIVE)
   warehouse        Warehouse?         @relation(fields: [warehouseId], references: [id])
   warehouseId      Int
-  DriverAndVehicle DriverAndVehicle[]
+  driverAndVehicle DriverAndVehicle[]
 }
 
 // Les enums n'existent pas avec SQLITE
