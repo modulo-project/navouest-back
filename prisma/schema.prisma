@@ -5,28 +5,16 @@ generator client {
   provider = "prisma-client-js"
 }
 
-// generator docs {
-//   provider = "node node_modules/prisma-docs-generator"
-//   output = "../src/prisma-generated/docs"
-// }
+generator docs {
+  provider = "node node_modules/prisma-docs-generator"
+  output   = "../src/prisma-generated/docs"
+}
 
 // generator dbml {
 //   provider   = "prisma-dbml-generator"
 //   output     = "../src/prisma-generated/dbml"
 //   outputName = "schema.dbml"
 // }
-
-generator nestjsDto {
-  provider                        = "prisma-generator-nestjs-dto"
-  output                          = "../src/prisma-generated/"
-  outputToNestJsResourceStructure = "false"
-  exportRelationModifierClasses   = "true"
-  reExport                        = "false"
-  createDtoPrefix                 = "Create"
-  updateDtoPrefix                 = "Update"
-  dtoSuffix                       = "Dto"
-  fileNamingStyle                 = "camel"
-}
 
 datasource db {
   provider = "mysql"
