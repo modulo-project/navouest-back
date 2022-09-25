@@ -68,7 +68,7 @@
                   <div class="mt-1 ml-2">
                     <div class="mb-1 font-medium text-gray-600"><a href="#model-Trip-fields">Fields</a></div>
                       <ul class="pl-3 ml-1 border-l-2 border-gray-400">
-                      <li><a href="#model-Trip-id">id</a></li><li><a href="#model-Trip-steps">steps</a></li><li><a href="#model-Trip-Client">Client</a></li><li><a href="#model-Trip-clientId">clientId</a></li>
+                      <li><a href="#model-Trip-id">id</a></li><li><a href="#model-Trip-steps">steps</a></li><li><a href="#model-Trip-client">client</a></li><li><a href="#model-Trip-clientId">clientId</a></li>
                       </ul>
                   </div>
                   <div class="mt-2 ml-2">
@@ -88,7 +88,7 @@
                   <div class="mt-1 ml-2">
                     <div class="mb-1 font-medium text-gray-600"><a href="#model-Step-fields">Fields</a></div>
                       <ul class="pl-3 ml-1 border-l-2 border-gray-400">
-                      <li><a href="#model-Step-id">id</a></li><li><a href="#model-Step-trip">trip</a></li><li><a href="#model-Step-tripId">tripId</a></li><li><a href="#model-Step-startedAt">startedAt</a></li><li><a href="#model-Step-endedAt">endedAt</a></li><li><a href="#model-Step-from">from</a></li><li><a href="#model-Step-to">to</a></li><li><a href="#model-Step-commentary">commentary</a></li><li><a href="#model-Step-passengersCount">passengersCount</a></li><li><a href="#model-Step-driverAndVehicle">driverAndVehicle</a></li>
+                      <li><a href="#model-Step-id">id</a></li><li><a href="#model-Step-trip">trip</a></li><li><a href="#model-Step-tripId">tripId</a></li><li><a href="#model-Step-startedAt">startedAt</a></li><li><a href="#model-Step-endedAt">endedAt</a></li><li><a href="#model-Step-from">from</a></li><li><a href="#model-Step-to">to</a></li><li><a href="#model-Step-distance">distance</a></li><li><a href="#model-Step-commentary">commentary</a></li><li><a href="#model-Step-passengersCount">passengersCount</a></li><li><a href="#model-Step-driverAndVehicle">driverAndVehicle</a></li>
                       </ul>
                   </div>
                   <div class="mt-2 ml-2">
@@ -128,7 +128,7 @@
                   <div class="mt-1 ml-2">
                     <div class="mb-1 font-medium text-gray-600"><a href="#model-Warehouse-fields">Fields</a></div>
                       <ul class="pl-3 ml-1 border-l-2 border-gray-400">
-                      <li><a href="#model-Warehouse-id">id</a></li><li><a href="#model-Warehouse-adress">adress</a></li><li><a href="#model-Warehouse-vehicles">vehicles</a></li><li><a href="#model-Warehouse-Driver">Driver</a></li>
+                      <li><a href="#model-Warehouse-id">id</a></li><li><a href="#model-Warehouse-adress">adress</a></li><li><a href="#model-Warehouse-vehicles">vehicles</a></li><li><a href="#model-Warehouse-driver">driver</a></li>
                       </ul>
                   </div>
                   <div class="mt-2 ml-2">
@@ -148,7 +148,7 @@
                   <div class="mt-1 ml-2">
                     <div class="mb-1 font-medium text-gray-600"><a href="#model-Vehicle-fields">Fields</a></div>
                       <ul class="pl-3 ml-1 border-l-2 border-gray-400">
-                      <li><a href="#model-Vehicle-id">id</a></li><li><a href="#model-Vehicle-model">model</a></li><li><a href="#model-Vehicle-capacity">capacity</a></li><li><a href="#model-Vehicle-Warehouse">Warehouse</a></li><li><a href="#model-Vehicle-warehouseId">warehouseId</a></li><li><a href="#model-Vehicle-DriverAndVehicle">DriverAndVehicle</a></li>
+                      <li><a href="#model-Vehicle-id">id</a></li><li><a href="#model-Vehicle-model">model</a></li><li><a href="#model-Vehicle-capacity">capacity</a></li><li><a href="#model-Vehicle-warehouse">warehouse</a></li><li><a href="#model-Vehicle-warehouseId">warehouseId</a></li><li><a href="#model-Vehicle-driverAndVehicle">driverAndVehicle</a></li>
                       </ul>
                   </div>
                   <div class="mt-2 ml-2">
@@ -168,7 +168,7 @@
                   <div class="mt-1 ml-2">
                     <div class="mb-1 font-medium text-gray-600"><a href="#model-Driver-fields">Fields</a></div>
                       <ul class="pl-3 ml-1 border-l-2 border-gray-400">
-                      <li><a href="#model-Driver-id">id</a></li><li><a href="#model-Driver-name">name</a></li><li><a href="#model-Driver-status">status</a></li><li><a href="#model-Driver-warehouse">warehouse</a></li><li><a href="#model-Driver-warehouseId">warehouseId</a></li><li><a href="#model-Driver-DriverAndVehicle">DriverAndVehicle</a></li>
+                      <li><a href="#model-Driver-id">id</a></li><li><a href="#model-Driver-name">name</a></li><li><a href="#model-Driver-status">status</a></li><li><a href="#model-Driver-warehouse">warehouse</a></li><li><a href="#model-Driver-warehouseId">warehouseId</a></li><li><a href="#model-Driver-driverAndVehicle">driverAndVehicle</a></li>
                       </ul>
                   </div>
                   <div class="mt-2 ml-2">
@@ -187,7 +187,7 @@
                 <a href="#input-types">Input Types</a>
               </div>
               <ul class="pl-3 ml-1 border-l-2 border-gray-400">
-              <li><a href="#type-inputType-ClientWhereInput">ClientWhereInput</a></li><li><a href="#type-inputType-ClientOrderByWithRelationInput">ClientOrderByWithRelationInput</a></li><li><a href="#type-inputType-ClientWhereUniqueInput">ClientWhereUniqueInput</a></li><li><a href="#type-inputType-ClientOrderByWithAggregationInput">ClientOrderByWithAggregationInput</a></li><li><a href="#type-inputType-ClientScalarWhereWithAggregatesInput">ClientScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-TripWhereInput">TripWhereInput</a></li><li><a href="#type-inputType-TripOrderByWithRelationInput">TripOrderByWithRelationInput</a></li><li><a href="#type-inputType-TripWhereUniqueInput">TripWhereUniqueInput</a></li><li><a href="#type-inputType-TripOrderByWithAggregationInput">TripOrderByWithAggregationInput</a></li><li><a href="#type-inputType-TripScalarWhereWithAggregatesInput">TripScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-StepWhereInput">StepWhereInput</a></li><li><a href="#type-inputType-StepOrderByWithRelationInput">StepOrderByWithRelationInput</a></li><li><a href="#type-inputType-StepWhereUniqueInput">StepWhereUniqueInput</a></li><li><a href="#type-inputType-StepOrderByWithAggregationInput">StepOrderByWithAggregationInput</a></li><li><a href="#type-inputType-StepScalarWhereWithAggregatesInput">StepScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-DriverAndVehicleWhereInput">DriverAndVehicleWhereInput</a></li><li><a href="#type-inputType-DriverAndVehicleOrderByWithRelationInput">DriverAndVehicleOrderByWithRelationInput</a></li><li><a href="#type-inputType-DriverAndVehicleWhereUniqueInput">DriverAndVehicleWhereUniqueInput</a></li><li><a href="#type-inputType-DriverAndVehicleOrderByWithAggregationInput">DriverAndVehicleOrderByWithAggregationInput</a></li><li><a href="#type-inputType-DriverAndVehicleScalarWhereWithAggregatesInput">DriverAndVehicleScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-WarehouseWhereInput">WarehouseWhereInput</a></li><li><a href="#type-inputType-WarehouseOrderByWithRelationInput">WarehouseOrderByWithRelationInput</a></li><li><a href="#type-inputType-WarehouseWhereUniqueInput">WarehouseWhereUniqueInput</a></li><li><a href="#type-inputType-WarehouseOrderByWithAggregationInput">WarehouseOrderByWithAggregationInput</a></li><li><a href="#type-inputType-WarehouseScalarWhereWithAggregatesInput">WarehouseScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-VehicleWhereInput">VehicleWhereInput</a></li><li><a href="#type-inputType-VehicleOrderByWithRelationInput">VehicleOrderByWithRelationInput</a></li><li><a href="#type-inputType-VehicleWhereUniqueInput">VehicleWhereUniqueInput</a></li><li><a href="#type-inputType-VehicleOrderByWithAggregationInput">VehicleOrderByWithAggregationInput</a></li><li><a href="#type-inputType-VehicleScalarWhereWithAggregatesInput">VehicleScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-DriverWhereInput">DriverWhereInput</a></li><li><a href="#type-inputType-DriverOrderByWithRelationInput">DriverOrderByWithRelationInput</a></li><li><a href="#type-inputType-DriverWhereUniqueInput">DriverWhereUniqueInput</a></li><li><a href="#type-inputType-DriverOrderByWithAggregationInput">DriverOrderByWithAggregationInput</a></li><li><a href="#type-inputType-DriverScalarWhereWithAggregatesInput">DriverScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-ClientCreateInput">ClientCreateInput</a></li><li><a href="#type-inputType-ClientUncheckedCreateInput">ClientUncheckedCreateInput</a></li><li><a href="#type-inputType-ClientUpdateInput">ClientUpdateInput</a></li><li><a href="#type-inputType-ClientUncheckedUpdateInput">ClientUncheckedUpdateInput</a></li><li><a href="#type-inputType-ClientCreateManyInput">ClientCreateManyInput</a></li><li><a href="#type-inputType-ClientUpdateManyMutationInput">ClientUpdateManyMutationInput</a></li><li><a href="#type-inputType-ClientUncheckedUpdateManyInput">ClientUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-TripCreateInput">TripCreateInput</a></li><li><a href="#type-inputType-TripUncheckedCreateInput">TripUncheckedCreateInput</a></li><li><a href="#type-inputType-TripUpdateInput">TripUpdateInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateInput">TripUncheckedUpdateInput</a></li><li><a href="#type-inputType-TripCreateManyInput">TripCreateManyInput</a></li><li><a href="#type-inputType-TripUpdateManyMutationInput">TripUpdateManyMutationInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateManyInput">TripUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-StepCreateInput">StepCreateInput</a></li><li><a href="#type-inputType-StepUncheckedCreateInput">StepUncheckedCreateInput</a></li><li><a href="#type-inputType-StepUpdateInput">StepUpdateInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateInput">StepUncheckedUpdateInput</a></li><li><a href="#type-inputType-StepCreateManyInput">StepCreateManyInput</a></li><li><a href="#type-inputType-StepUpdateManyMutationInput">StepUpdateManyMutationInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateManyInput">StepUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateInput">DriverAndVehicleCreateInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateInput">DriverAndVehicleUncheckedCreateInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateInput">DriverAndVehicleUpdateInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateInput">DriverAndVehicleUncheckedUpdateInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyInput">DriverAndVehicleCreateManyInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyMutationInput">DriverAndVehicleUpdateManyMutationInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyInput">DriverAndVehicleUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-WarehouseCreateInput">WarehouseCreateInput</a></li><li><a href="#type-inputType-WarehouseUncheckedCreateInput">WarehouseUncheckedCreateInput</a></li><li><a href="#type-inputType-WarehouseUpdateInput">WarehouseUpdateInput</a></li><li><a href="#type-inputType-WarehouseUncheckedUpdateInput">WarehouseUncheckedUpdateInput</a></li><li><a href="#type-inputType-WarehouseCreateManyInput">WarehouseCreateManyInput</a></li><li><a href="#type-inputType-WarehouseUpdateManyMutationInput">WarehouseUpdateManyMutationInput</a></li><li><a href="#type-inputType-WarehouseUncheckedUpdateManyInput">WarehouseUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-VehicleCreateInput">VehicleCreateInput</a></li><li><a href="#type-inputType-VehicleUncheckedCreateInput">VehicleUncheckedCreateInput</a></li><li><a href="#type-inputType-VehicleUpdateInput">VehicleUpdateInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateInput">VehicleUncheckedUpdateInput</a></li><li><a href="#type-inputType-VehicleCreateManyInput">VehicleCreateManyInput</a></li><li><a href="#type-inputType-VehicleUpdateManyMutationInput">VehicleUpdateManyMutationInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateManyInput">VehicleUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-DriverCreateInput">DriverCreateInput</a></li><li><a href="#type-inputType-DriverUncheckedCreateInput">DriverUncheckedCreateInput</a></li><li><a href="#type-inputType-DriverUpdateInput">DriverUpdateInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateInput">DriverUncheckedUpdateInput</a></li><li><a href="#type-inputType-DriverCreateManyInput">DriverCreateManyInput</a></li><li><a href="#type-inputType-DriverUpdateManyMutationInput">DriverUpdateManyMutationInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateManyInput">DriverUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-IntFilter">IntFilter</a></li><li><a href="#type-inputType-StringNullableFilter">StringNullableFilter</a></li><li><a href="#type-inputType-TripListRelationFilter">TripListRelationFilter</a></li><li><a href="#type-inputType-TripOrderByRelationAggregateInput">TripOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-ClientCountOrderByAggregateInput">ClientCountOrderByAggregateInput</a></li><li><a href="#type-inputType-ClientAvgOrderByAggregateInput">ClientAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-ClientMaxOrderByAggregateInput">ClientMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-ClientMinOrderByAggregateInput">ClientMinOrderByAggregateInput</a></li><li><a href="#type-inputType-ClientSumOrderByAggregateInput">ClientSumOrderByAggregateInput</a></li><li><a href="#type-inputType-IntWithAggregatesFilter">IntWithAggregatesFilter</a></li><li><a href="#type-inputType-StringNullableWithAggregatesFilter">StringNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-StepListRelationFilter">StepListRelationFilter</a></li><li><a href="#type-inputType-ClientRelationFilter">ClientRelationFilter</a></li><li><a href="#type-inputType-IntNullableFilter">IntNullableFilter</a></li><li><a href="#type-inputType-StepOrderByRelationAggregateInput">StepOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-TripCountOrderByAggregateInput">TripCountOrderByAggregateInput</a></li><li><a href="#type-inputType-TripAvgOrderByAggregateInput">TripAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-TripMaxOrderByAggregateInput">TripMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-TripMinOrderByAggregateInput">TripMinOrderByAggregateInput</a></li><li><a href="#type-inputType-TripSumOrderByAggregateInput">TripSumOrderByAggregateInput</a></li><li><a href="#type-inputType-IntNullableWithAggregatesFilter">IntNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-TripRelationFilter">TripRelationFilter</a></li><li><a href="#type-inputType-DateTimeFilter">DateTimeFilter</a></li><li><a href="#type-inputType-StringFilter">StringFilter</a></li><li><a href="#type-inputType-DriverAndVehicleListRelationFilter">DriverAndVehicleListRelationFilter</a></li><li><a href="#type-inputType-DriverAndVehicleOrderByRelationAggregateInput">DriverAndVehicleOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-StepCountOrderByAggregateInput">StepCountOrderByAggregateInput</a></li><li><a href="#type-inputType-StepAvgOrderByAggregateInput">StepAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-StepMaxOrderByAggregateInput">StepMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-StepMinOrderByAggregateInput">StepMinOrderByAggregateInput</a></li><li><a href="#type-inputType-StepSumOrderByAggregateInput">StepSumOrderByAggregateInput</a></li><li><a href="#type-inputType-DateTimeWithAggregatesFilter">DateTimeWithAggregatesFilter</a></li><li><a href="#type-inputType-StringWithAggregatesFilter">StringWithAggregatesFilter</a></li><li><a href="#type-inputType-StepRelationFilter">StepRelationFilter</a></li><li><a href="#type-inputType-VehicleRelationFilter">VehicleRelationFilter</a></li><li><a href="#type-inputType-DriverRelationFilter">DriverRelationFilter</a></li><li><a href="#type-inputType-DriverAndVehicleCountOrderByAggregateInput">DriverAndVehicleCountOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAndVehicleAvgOrderByAggregateInput">DriverAndVehicleAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAndVehicleMaxOrderByAggregateInput">DriverAndVehicleMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAndVehicleMinOrderByAggregateInput">DriverAndVehicleMinOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAndVehicleSumOrderByAggregateInput">DriverAndVehicleSumOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleListRelationFilter">VehicleListRelationFilter</a></li><li><a href="#type-inputType-DriverListRelationFilter">DriverListRelationFilter</a></li><li><a href="#type-inputType-VehicleOrderByRelationAggregateInput">VehicleOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-DriverOrderByRelationAggregateInput">DriverOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-WarehouseCountOrderByAggregateInput">WarehouseCountOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseAvgOrderByAggregateInput">WarehouseAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseMaxOrderByAggregateInput">WarehouseMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseMinOrderByAggregateInput">WarehouseMinOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseSumOrderByAggregateInput">WarehouseSumOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseRelationFilter">WarehouseRelationFilter</a></li><li><a href="#type-inputType-VehicleCountOrderByAggregateInput">VehicleCountOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleAvgOrderByAggregateInput">VehicleAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleMaxOrderByAggregateInput">VehicleMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleMinOrderByAggregateInput">VehicleMinOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleSumOrderByAggregateInput">VehicleSumOrderByAggregateInput</a></li><li><a href="#type-inputType-EnumStatusFilter">EnumStatusFilter</a></li><li><a href="#type-inputType-DriverCountOrderByAggregateInput">DriverCountOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAvgOrderByAggregateInput">DriverAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverMaxOrderByAggregateInput">DriverMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverMinOrderByAggregateInput">DriverMinOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverSumOrderByAggregateInput">DriverSumOrderByAggregateInput</a></li><li><a href="#type-inputType-EnumStatusWithAggregatesFilter">EnumStatusWithAggregatesFilter</a></li><li><a href="#type-inputType-TripCreateNestedManyWithoutClientInput">TripCreateNestedManyWithoutClientInput</a></li><li><a href="#type-inputType-TripUncheckedCreateNestedManyWithoutClientInput">TripUncheckedCreateNestedManyWithoutClientInput</a></li><li><a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-TripUpdateManyWithoutClientNestedInput">TripUpdateManyWithoutClientNestedInput</a></li><li><a href="#type-inputType-IntFieldUpdateOperationsInput">IntFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateManyWithoutClientNestedInput">TripUncheckedUpdateManyWithoutClientNestedInput</a></li><li><a href="#type-inputType-StepCreateNestedManyWithoutTripInput">StepCreateNestedManyWithoutTripInput</a></li><li><a href="#type-inputType-ClientCreateNestedOneWithoutTripsInput">ClientCreateNestedOneWithoutTripsInput</a></li><li><a href="#type-inputType-StepUncheckedCreateNestedManyWithoutTripInput">StepUncheckedCreateNestedManyWithoutTripInput</a></li><li><a href="#type-inputType-StepUpdateManyWithoutTripNestedInput">StepUpdateManyWithoutTripNestedInput</a></li><li><a href="#type-inputType-ClientUpdateOneWithoutTripsNestedInput">ClientUpdateOneWithoutTripsNestedInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateManyWithoutTripNestedInput">StepUncheckedUpdateManyWithoutTripNestedInput</a></li><li><a href="#type-inputType-NullableIntFieldUpdateOperationsInput">NullableIntFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-TripCreateNestedOneWithoutStepsInput">TripCreateNestedOneWithoutStepsInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutStepInput">DriverAndVehicleCreateNestedManyWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutStepInput">DriverAndVehicleUncheckedCreateNestedManyWithoutStepInput</a></li><li><a href="#type-inputType-TripUpdateOneWithoutStepsNestedInput">TripUpdateOneWithoutStepsNestedInput</a></li><li><a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithoutStepNestedInput">DriverAndVehicleUpdateManyWithoutStepNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutStepNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutStepNestedInput</a></li><li><a href="#type-inputType-StepCreateNestedOneWithoutDriverAndVehicleInput">StepCreateNestedOneWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateNestedOneWithoutDriverAndVehicleInput">VehicleCreateNestedOneWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverCreateNestedOneWithoutDriverAndVehicleInput">DriverCreateNestedOneWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUpdateOneWithoutDriverAndVehicleNestedInput">StepUpdateOneWithoutDriverAndVehicleNestedInput</a></li><li><a href="#type-inputType-VehicleUpdateOneWithoutDriverAndVehicleNestedInput">VehicleUpdateOneWithoutDriverAndVehicleNestedInput</a></li><li><a href="#type-inputType-DriverUpdateOneWithoutDriverAndVehicleNestedInput">DriverUpdateOneWithoutDriverAndVehicleNestedInput</a></li><li><a href="#type-inputType-VehicleCreateNestedManyWithoutWarehouseInput">VehicleCreateNestedManyWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverCreateNestedManyWithoutWarehouseInput">DriverCreateNestedManyWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUncheckedCreateNestedManyWithoutWarehouseInput">VehicleUncheckedCreateNestedManyWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUncheckedCreateNestedManyWithoutWarehouseInput">DriverUncheckedCreateNestedManyWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUpdateManyWithoutWarehouseNestedInput">VehicleUpdateManyWithoutWarehouseNestedInput</a></li><li><a href="#type-inputType-DriverUpdateManyWithoutWarehouseNestedInput">DriverUpdateManyWithoutWarehouseNestedInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateManyWithoutWarehouseNestedInput">VehicleUncheckedUpdateManyWithoutWarehouseNestedInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateManyWithoutWarehouseNestedInput">DriverUncheckedUpdateManyWithoutWarehouseNestedInput</a></li><li><a href="#type-inputType-WarehouseCreateNestedOneWithoutVehiclesInput">WarehouseCreateNestedOneWithoutVehiclesInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutVehicleInput">DriverAndVehicleCreateNestedManyWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutVehicleInput">DriverAndVehicleUncheckedCreateNestedManyWithoutVehicleInput</a></li><li><a href="#type-inputType-WarehouseUpdateOneWithoutVehiclesNestedInput">WarehouseUpdateOneWithoutVehiclesNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithoutVehicleNestedInput">DriverAndVehicleUpdateManyWithoutVehicleNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutVehicleNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutVehicleNestedInput</a></li><li><a href="#type-inputType-WarehouseCreateNestedOneWithoutDriverInput">WarehouseCreateNestedOneWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutDriverInput">DriverAndVehicleCreateNestedManyWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutDriverInput">DriverAndVehicleUncheckedCreateNestedManyWithoutDriverInput</a></li><li><a href="#type-inputType-EnumStatusFieldUpdateOperationsInput">EnumStatusFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-WarehouseUpdateOneWithoutDriverNestedInput">WarehouseUpdateOneWithoutDriverNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithoutDriverNestedInput">DriverAndVehicleUpdateManyWithoutDriverNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutDriverNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutDriverNestedInput</a></li><li><a href="#type-inputType-NestedIntFilter">NestedIntFilter</a></li><li><a href="#type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</a></li><li><a href="#type-inputType-NestedIntWithAggregatesFilter">NestedIntWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedFloatFilter">NestedFloatFilter</a></li><li><a href="#type-inputType-NestedStringNullableWithAggregatesFilter">NestedStringNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedIntNullableFilter">NestedIntNullableFilter</a></li><li><a href="#type-inputType-NestedIntNullableWithAggregatesFilter">NestedIntNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a></li><li><a href="#type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</a></li><li><a href="#type-inputType-NestedStringFilter">NestedStringFilter</a></li><li><a href="#type-inputType-NestedDateTimeWithAggregatesFilter">NestedDateTimeWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedStringWithAggregatesFilter">NestedStringWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedEnumStatusFilter">NestedEnumStatusFilter</a></li><li><a href="#type-inputType-NestedEnumStatusWithAggregatesFilter">NestedEnumStatusWithAggregatesFilter</a></li><li><a href="#type-inputType-TripCreateWithoutClientInput">TripCreateWithoutClientInput</a></li><li><a href="#type-inputType-TripUncheckedCreateWithoutClientInput">TripUncheckedCreateWithoutClientInput</a></li><li><a href="#type-inputType-TripCreateOrConnectWithoutClientInput">TripCreateOrConnectWithoutClientInput</a></li><li><a href="#type-inputType-TripCreateManyClientInputEnvelope">TripCreateManyClientInputEnvelope</a></li><li><a href="#type-inputType-TripUpsertWithWhereUniqueWithoutClientInput">TripUpsertWithWhereUniqueWithoutClientInput</a></li><li><a href="#type-inputType-TripUpdateWithWhereUniqueWithoutClientInput">TripUpdateWithWhereUniqueWithoutClientInput</a></li><li><a href="#type-inputType-TripUpdateManyWithWhereWithoutClientInput">TripUpdateManyWithWhereWithoutClientInput</a></li><li><a href="#type-inputType-TripScalarWhereInput">TripScalarWhereInput</a></li><li><a href="#type-inputType-StepCreateWithoutTripInput">StepCreateWithoutTripInput</a></li><li><a href="#type-inputType-StepUncheckedCreateWithoutTripInput">StepUncheckedCreateWithoutTripInput</a></li><li><a href="#type-inputType-StepCreateOrConnectWithoutTripInput">StepCreateOrConnectWithoutTripInput</a></li><li><a href="#type-inputType-StepCreateManyTripInputEnvelope">StepCreateManyTripInputEnvelope</a></li><li><a href="#type-inputType-ClientCreateWithoutTripsInput">ClientCreateWithoutTripsInput</a></li><li><a href="#type-inputType-ClientUncheckedCreateWithoutTripsInput">ClientUncheckedCreateWithoutTripsInput</a></li><li><a href="#type-inputType-ClientCreateOrConnectWithoutTripsInput">ClientCreateOrConnectWithoutTripsInput</a></li><li><a href="#type-inputType-StepUpsertWithWhereUniqueWithoutTripInput">StepUpsertWithWhereUniqueWithoutTripInput</a></li><li><a href="#type-inputType-StepUpdateWithWhereUniqueWithoutTripInput">StepUpdateWithWhereUniqueWithoutTripInput</a></li><li><a href="#type-inputType-StepUpdateManyWithWhereWithoutTripInput">StepUpdateManyWithWhereWithoutTripInput</a></li><li><a href="#type-inputType-StepScalarWhereInput">StepScalarWhereInput</a></li><li><a href="#type-inputType-ClientUpsertWithoutTripsInput">ClientUpsertWithoutTripsInput</a></li><li><a href="#type-inputType-ClientUpdateWithoutTripsInput">ClientUpdateWithoutTripsInput</a></li><li><a href="#type-inputType-ClientUncheckedUpdateWithoutTripsInput">ClientUncheckedUpdateWithoutTripsInput</a></li><li><a href="#type-inputType-TripCreateWithoutStepsInput">TripCreateWithoutStepsInput</a></li><li><a href="#type-inputType-TripUncheckedCreateWithoutStepsInput">TripUncheckedCreateWithoutStepsInput</a></li><li><a href="#type-inputType-TripCreateOrConnectWithoutStepsInput">TripCreateOrConnectWithoutStepsInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateWithoutStepInput">DriverAndVehicleCreateWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateWithoutStepInput">DriverAndVehicleUncheckedCreateWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateOrConnectWithoutStepInput">DriverAndVehicleCreateOrConnectWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyStepInputEnvelope">DriverAndVehicleCreateManyStepInputEnvelope</a></li><li><a href="#type-inputType-TripUpsertWithoutStepsInput">TripUpsertWithoutStepsInput</a></li><li><a href="#type-inputType-TripUpdateWithoutStepsInput">TripUpdateWithoutStepsInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateWithoutStepsInput">TripUncheckedUpdateWithoutStepsInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpsertWithWhereUniqueWithoutStepInput">DriverAndVehicleUpsertWithWhereUniqueWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithWhereUniqueWithoutStepInput">DriverAndVehicleUpdateWithWhereUniqueWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithWhereWithoutStepInput">DriverAndVehicleUpdateManyWithWhereWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleScalarWhereInput">DriverAndVehicleScalarWhereInput</a></li><li><a href="#type-inputType-StepCreateWithoutDriverAndVehicleInput">StepCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUncheckedCreateWithoutDriverAndVehicleInput">StepUncheckedCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepCreateOrConnectWithoutDriverAndVehicleInput">StepCreateOrConnectWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateWithoutDriverAndVehicleInput">VehicleCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleUncheckedCreateWithoutDriverAndVehicleInput">VehicleUncheckedCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateOrConnectWithoutDriverAndVehicleInput">VehicleCreateOrConnectWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverCreateWithoutDriverAndVehicleInput">DriverCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverUncheckedCreateWithoutDriverAndVehicleInput">DriverUncheckedCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverCreateOrConnectWithoutDriverAndVehicleInput">DriverCreateOrConnectWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUpsertWithoutDriverAndVehicleInput">StepUpsertWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUpdateWithoutDriverAndVehicleInput">StepUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateWithoutDriverAndVehicleInput">StepUncheckedUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleUpsertWithoutDriverAndVehicleInput">VehicleUpsertWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleUpdateWithoutDriverAndVehicleInput">VehicleUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateWithoutDriverAndVehicleInput">VehicleUncheckedUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverUpsertWithoutDriverAndVehicleInput">DriverUpsertWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverUpdateWithoutDriverAndVehicleInput">DriverUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateWithoutDriverAndVehicleInput">DriverUncheckedUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateWithoutWarehouseInput">VehicleCreateWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUncheckedCreateWithoutWarehouseInput">VehicleUncheckedCreateWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleCreateOrConnectWithoutWarehouseInput">VehicleCreateOrConnectWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleCreateManyWarehouseInputEnvelope">VehicleCreateManyWarehouseInputEnvelope</a></li><li><a href="#type-inputType-DriverCreateWithoutWarehouseInput">DriverCreateWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUncheckedCreateWithoutWarehouseInput">DriverUncheckedCreateWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverCreateOrConnectWithoutWarehouseInput">DriverCreateOrConnectWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverCreateManyWarehouseInputEnvelope">DriverCreateManyWarehouseInputEnvelope</a></li><li><a href="#type-inputType-VehicleUpsertWithWhereUniqueWithoutWarehouseInput">VehicleUpsertWithWhereUniqueWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUpdateWithWhereUniqueWithoutWarehouseInput">VehicleUpdateWithWhereUniqueWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUpdateManyWithWhereWithoutWarehouseInput">VehicleUpdateManyWithWhereWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleScalarWhereInput">VehicleScalarWhereInput</a></li><li><a href="#type-inputType-DriverUpsertWithWhereUniqueWithoutWarehouseInput">DriverUpsertWithWhereUniqueWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUpdateWithWhereUniqueWithoutWarehouseInput">DriverUpdateWithWhereUniqueWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUpdateManyWithWhereWithoutWarehouseInput">DriverUpdateManyWithWhereWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverScalarWhereInput">DriverScalarWhereInput</a></li><li><a href="#type-inputType-WarehouseCreateWithoutVehiclesInput">WarehouseCreateWithoutVehiclesInput</a></li><li><a href="#type-inputType-WarehouseUncheckedCreateWithoutVehiclesInput">WarehouseUncheckedCreateWithoutVehiclesInput</a></li><li><a href="#type-inputType-WarehouseCreateOrConnectWithoutVehiclesInput">WarehouseCreateOrConnectWithoutVehiclesInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateWithoutVehicleInput">DriverAndVehicleCreateWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateWithoutVehicleInput">DriverAndVehicleUncheckedCreateWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateOrConnectWithoutVehicleInput">DriverAndVehicleCreateOrConnectWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyVehicleInputEnvelope">DriverAndVehicleCreateManyVehicleInputEnvelope</a></li><li><a href="#type-inputType-WarehouseUpsertWithoutVehiclesInput">WarehouseUpsertWithoutVehiclesInput</a></li><li><a href="#type-inputType-WarehouseUpdateWithoutVehiclesInput">WarehouseUpdateWithoutVehiclesInput</a></li><li><a href="#type-inputType-WarehouseUncheckedUpdateWithoutVehiclesInput">WarehouseUncheckedUpdateWithoutVehiclesInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpsertWithWhereUniqueWithoutVehicleInput">DriverAndVehicleUpsertWithWhereUniqueWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithWhereUniqueWithoutVehicleInput">DriverAndVehicleUpdateWithWhereUniqueWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithWhereWithoutVehicleInput">DriverAndVehicleUpdateManyWithWhereWithoutVehicleInput</a></li><li><a href="#type-inputType-WarehouseCreateWithoutDriverInput">WarehouseCreateWithoutDriverInput</a></li><li><a href="#type-inputType-WarehouseUncheckedCreateWithoutDriverInput">WarehouseUncheckedCreateWithoutDriverInput</a></li><li><a href="#type-inputType-WarehouseCreateOrConnectWithoutDriverInput">WarehouseCreateOrConnectWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateWithoutDriverInput">DriverAndVehicleCreateWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateWithoutDriverInput">DriverAndVehicleUncheckedCreateWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateOrConnectWithoutDriverInput">DriverAndVehicleCreateOrConnectWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyDriverInputEnvelope">DriverAndVehicleCreateManyDriverInputEnvelope</a></li><li><a href="#type-inputType-WarehouseUpsertWithoutDriverInput">WarehouseUpsertWithoutDriverInput</a></li><li><a href="#type-inputType-WarehouseUpdateWithoutDriverInput">WarehouseUpdateWithoutDriverInput</a></li><li><a href="#type-inputType-WarehouseUncheckedUpdateWithoutDriverInput">WarehouseUncheckedUpdateWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpsertWithWhereUniqueWithoutDriverInput">DriverAndVehicleUpsertWithWhereUniqueWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithWhereUniqueWithoutDriverInput">DriverAndVehicleUpdateWithWhereUniqueWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithWhereWithoutDriverInput">DriverAndVehicleUpdateManyWithWhereWithoutDriverInput</a></li><li><a href="#type-inputType-TripCreateManyClientInput">TripCreateManyClientInput</a></li><li><a href="#type-inputType-TripUpdateWithoutClientInput">TripUpdateWithoutClientInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateWithoutClientInput">TripUncheckedUpdateWithoutClientInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateManyWithoutTripsInput">TripUncheckedUpdateManyWithoutTripsInput</a></li><li><a href="#type-inputType-StepCreateManyTripInput">StepCreateManyTripInput</a></li><li><a href="#type-inputType-StepUpdateWithoutTripInput">StepUpdateWithoutTripInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateWithoutTripInput">StepUncheckedUpdateWithoutTripInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateManyWithoutStepsInput">StepUncheckedUpdateManyWithoutStepsInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyStepInput">DriverAndVehicleCreateManyStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithoutStepInput">DriverAndVehicleUpdateWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateWithoutStepInput">DriverAndVehicleUncheckedUpdateWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutDriverAndVehicleInput">DriverAndVehicleUncheckedUpdateManyWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateManyWarehouseInput">VehicleCreateManyWarehouseInput</a></li><li><a href="#type-inputType-DriverCreateManyWarehouseInput">DriverCreateManyWarehouseInput</a></li><li><a href="#type-inputType-VehicleUpdateWithoutWarehouseInput">VehicleUpdateWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateWithoutWarehouseInput">VehicleUncheckedUpdateWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateManyWithoutVehiclesInput">VehicleUncheckedUpdateManyWithoutVehiclesInput</a></li><li><a href="#type-inputType-DriverUpdateWithoutWarehouseInput">DriverUpdateWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateWithoutWarehouseInput">DriverUncheckedUpdateWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateManyWithoutDriverInput">DriverUncheckedUpdateManyWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyVehicleInput">DriverAndVehicleCreateManyVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithoutVehicleInput">DriverAndVehicleUpdateWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateWithoutVehicleInput">DriverAndVehicleUncheckedUpdateWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyDriverInput">DriverAndVehicleCreateManyDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithoutDriverInput">DriverAndVehicleUpdateWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateWithoutDriverInput">DriverAndVehicleUncheckedUpdateWithoutDriverInput</a></li>
+              <li><a href="#type-inputType-ClientWhereInput">ClientWhereInput</a></li><li><a href="#type-inputType-ClientOrderByWithRelationInput">ClientOrderByWithRelationInput</a></li><li><a href="#type-inputType-ClientWhereUniqueInput">ClientWhereUniqueInput</a></li><li><a href="#type-inputType-ClientOrderByWithAggregationInput">ClientOrderByWithAggregationInput</a></li><li><a href="#type-inputType-ClientScalarWhereWithAggregatesInput">ClientScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-TripWhereInput">TripWhereInput</a></li><li><a href="#type-inputType-TripOrderByWithRelationInput">TripOrderByWithRelationInput</a></li><li><a href="#type-inputType-TripWhereUniqueInput">TripWhereUniqueInput</a></li><li><a href="#type-inputType-TripOrderByWithAggregationInput">TripOrderByWithAggregationInput</a></li><li><a href="#type-inputType-TripScalarWhereWithAggregatesInput">TripScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-StepWhereInput">StepWhereInput</a></li><li><a href="#type-inputType-StepOrderByWithRelationInput">StepOrderByWithRelationInput</a></li><li><a href="#type-inputType-StepWhereUniqueInput">StepWhereUniqueInput</a></li><li><a href="#type-inputType-StepOrderByWithAggregationInput">StepOrderByWithAggregationInput</a></li><li><a href="#type-inputType-StepScalarWhereWithAggregatesInput">StepScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-DriverAndVehicleWhereInput">DriverAndVehicleWhereInput</a></li><li><a href="#type-inputType-DriverAndVehicleOrderByWithRelationInput">DriverAndVehicleOrderByWithRelationInput</a></li><li><a href="#type-inputType-DriverAndVehicleWhereUniqueInput">DriverAndVehicleWhereUniqueInput</a></li><li><a href="#type-inputType-DriverAndVehicleOrderByWithAggregationInput">DriverAndVehicleOrderByWithAggregationInput</a></li><li><a href="#type-inputType-DriverAndVehicleScalarWhereWithAggregatesInput">DriverAndVehicleScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-WarehouseWhereInput">WarehouseWhereInput</a></li><li><a href="#type-inputType-WarehouseOrderByWithRelationInput">WarehouseOrderByWithRelationInput</a></li><li><a href="#type-inputType-WarehouseWhereUniqueInput">WarehouseWhereUniqueInput</a></li><li><a href="#type-inputType-WarehouseOrderByWithAggregationInput">WarehouseOrderByWithAggregationInput</a></li><li><a href="#type-inputType-WarehouseScalarWhereWithAggregatesInput">WarehouseScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-VehicleWhereInput">VehicleWhereInput</a></li><li><a href="#type-inputType-VehicleOrderByWithRelationInput">VehicleOrderByWithRelationInput</a></li><li><a href="#type-inputType-VehicleWhereUniqueInput">VehicleWhereUniqueInput</a></li><li><a href="#type-inputType-VehicleOrderByWithAggregationInput">VehicleOrderByWithAggregationInput</a></li><li><a href="#type-inputType-VehicleScalarWhereWithAggregatesInput">VehicleScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-DriverWhereInput">DriverWhereInput</a></li><li><a href="#type-inputType-DriverOrderByWithRelationInput">DriverOrderByWithRelationInput</a></li><li><a href="#type-inputType-DriverWhereUniqueInput">DriverWhereUniqueInput</a></li><li><a href="#type-inputType-DriverOrderByWithAggregationInput">DriverOrderByWithAggregationInput</a></li><li><a href="#type-inputType-DriverScalarWhereWithAggregatesInput">DriverScalarWhereWithAggregatesInput</a></li><li><a href="#type-inputType-ClientCreateInput">ClientCreateInput</a></li><li><a href="#type-inputType-ClientUncheckedCreateInput">ClientUncheckedCreateInput</a></li><li><a href="#type-inputType-ClientUpdateInput">ClientUpdateInput</a></li><li><a href="#type-inputType-ClientUncheckedUpdateInput">ClientUncheckedUpdateInput</a></li><li><a href="#type-inputType-ClientCreateManyInput">ClientCreateManyInput</a></li><li><a href="#type-inputType-ClientUpdateManyMutationInput">ClientUpdateManyMutationInput</a></li><li><a href="#type-inputType-ClientUncheckedUpdateManyInput">ClientUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-TripCreateInput">TripCreateInput</a></li><li><a href="#type-inputType-TripUncheckedCreateInput">TripUncheckedCreateInput</a></li><li><a href="#type-inputType-TripUpdateInput">TripUpdateInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateInput">TripUncheckedUpdateInput</a></li><li><a href="#type-inputType-TripCreateManyInput">TripCreateManyInput</a></li><li><a href="#type-inputType-TripUpdateManyMutationInput">TripUpdateManyMutationInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateManyInput">TripUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-StepCreateInput">StepCreateInput</a></li><li><a href="#type-inputType-StepUncheckedCreateInput">StepUncheckedCreateInput</a></li><li><a href="#type-inputType-StepUpdateInput">StepUpdateInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateInput">StepUncheckedUpdateInput</a></li><li><a href="#type-inputType-StepCreateManyInput">StepCreateManyInput</a></li><li><a href="#type-inputType-StepUpdateManyMutationInput">StepUpdateManyMutationInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateManyInput">StepUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateInput">DriverAndVehicleCreateInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateInput">DriverAndVehicleUncheckedCreateInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateInput">DriverAndVehicleUpdateInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateInput">DriverAndVehicleUncheckedUpdateInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyInput">DriverAndVehicleCreateManyInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyMutationInput">DriverAndVehicleUpdateManyMutationInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyInput">DriverAndVehicleUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-WarehouseCreateInput">WarehouseCreateInput</a></li><li><a href="#type-inputType-WarehouseUncheckedCreateInput">WarehouseUncheckedCreateInput</a></li><li><a href="#type-inputType-WarehouseUpdateInput">WarehouseUpdateInput</a></li><li><a href="#type-inputType-WarehouseUncheckedUpdateInput">WarehouseUncheckedUpdateInput</a></li><li><a href="#type-inputType-WarehouseCreateManyInput">WarehouseCreateManyInput</a></li><li><a href="#type-inputType-WarehouseUpdateManyMutationInput">WarehouseUpdateManyMutationInput</a></li><li><a href="#type-inputType-WarehouseUncheckedUpdateManyInput">WarehouseUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-VehicleCreateInput">VehicleCreateInput</a></li><li><a href="#type-inputType-VehicleUncheckedCreateInput">VehicleUncheckedCreateInput</a></li><li><a href="#type-inputType-VehicleUpdateInput">VehicleUpdateInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateInput">VehicleUncheckedUpdateInput</a></li><li><a href="#type-inputType-VehicleCreateManyInput">VehicleCreateManyInput</a></li><li><a href="#type-inputType-VehicleUpdateManyMutationInput">VehicleUpdateManyMutationInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateManyInput">VehicleUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-DriverCreateInput">DriverCreateInput</a></li><li><a href="#type-inputType-DriverUncheckedCreateInput">DriverUncheckedCreateInput</a></li><li><a href="#type-inputType-DriverUpdateInput">DriverUpdateInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateInput">DriverUncheckedUpdateInput</a></li><li><a href="#type-inputType-DriverCreateManyInput">DriverCreateManyInput</a></li><li><a href="#type-inputType-DriverUpdateManyMutationInput">DriverUpdateManyMutationInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateManyInput">DriverUncheckedUpdateManyInput</a></li><li><a href="#type-inputType-IntFilter">IntFilter</a></li><li><a href="#type-inputType-StringNullableFilter">StringNullableFilter</a></li><li><a href="#type-inputType-TripListRelationFilter">TripListRelationFilter</a></li><li><a href="#type-inputType-TripOrderByRelationAggregateInput">TripOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-ClientCountOrderByAggregateInput">ClientCountOrderByAggregateInput</a></li><li><a href="#type-inputType-ClientAvgOrderByAggregateInput">ClientAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-ClientMaxOrderByAggregateInput">ClientMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-ClientMinOrderByAggregateInput">ClientMinOrderByAggregateInput</a></li><li><a href="#type-inputType-ClientSumOrderByAggregateInput">ClientSumOrderByAggregateInput</a></li><li><a href="#type-inputType-IntWithAggregatesFilter">IntWithAggregatesFilter</a></li><li><a href="#type-inputType-StringNullableWithAggregatesFilter">StringNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-StepListRelationFilter">StepListRelationFilter</a></li><li><a href="#type-inputType-ClientRelationFilter">ClientRelationFilter</a></li><li><a href="#type-inputType-IntNullableFilter">IntNullableFilter</a></li><li><a href="#type-inputType-StepOrderByRelationAggregateInput">StepOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-TripCountOrderByAggregateInput">TripCountOrderByAggregateInput</a></li><li><a href="#type-inputType-TripAvgOrderByAggregateInput">TripAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-TripMaxOrderByAggregateInput">TripMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-TripMinOrderByAggregateInput">TripMinOrderByAggregateInput</a></li><li><a href="#type-inputType-TripSumOrderByAggregateInput">TripSumOrderByAggregateInput</a></li><li><a href="#type-inputType-IntNullableWithAggregatesFilter">IntNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-TripRelationFilter">TripRelationFilter</a></li><li><a href="#type-inputType-DateTimeFilter">DateTimeFilter</a></li><li><a href="#type-inputType-StringFilter">StringFilter</a></li><li><a href="#type-inputType-FloatNullableFilter">FloatNullableFilter</a></li><li><a href="#type-inputType-DriverAndVehicleListRelationFilter">DriverAndVehicleListRelationFilter</a></li><li><a href="#type-inputType-DriverAndVehicleOrderByRelationAggregateInput">DriverAndVehicleOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-StepCountOrderByAggregateInput">StepCountOrderByAggregateInput</a></li><li><a href="#type-inputType-StepAvgOrderByAggregateInput">StepAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-StepMaxOrderByAggregateInput">StepMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-StepMinOrderByAggregateInput">StepMinOrderByAggregateInput</a></li><li><a href="#type-inputType-StepSumOrderByAggregateInput">StepSumOrderByAggregateInput</a></li><li><a href="#type-inputType-DateTimeWithAggregatesFilter">DateTimeWithAggregatesFilter</a></li><li><a href="#type-inputType-StringWithAggregatesFilter">StringWithAggregatesFilter</a></li><li><a href="#type-inputType-FloatNullableWithAggregatesFilter">FloatNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-StepRelationFilter">StepRelationFilter</a></li><li><a href="#type-inputType-VehicleRelationFilter">VehicleRelationFilter</a></li><li><a href="#type-inputType-DriverRelationFilter">DriverRelationFilter</a></li><li><a href="#type-inputType-DriverAndVehicleCountOrderByAggregateInput">DriverAndVehicleCountOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAndVehicleAvgOrderByAggregateInput">DriverAndVehicleAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAndVehicleMaxOrderByAggregateInput">DriverAndVehicleMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAndVehicleMinOrderByAggregateInput">DriverAndVehicleMinOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAndVehicleSumOrderByAggregateInput">DriverAndVehicleSumOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleListRelationFilter">VehicleListRelationFilter</a></li><li><a href="#type-inputType-DriverListRelationFilter">DriverListRelationFilter</a></li><li><a href="#type-inputType-VehicleOrderByRelationAggregateInput">VehicleOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-DriverOrderByRelationAggregateInput">DriverOrderByRelationAggregateInput</a></li><li><a href="#type-inputType-WarehouseCountOrderByAggregateInput">WarehouseCountOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseAvgOrderByAggregateInput">WarehouseAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseMaxOrderByAggregateInput">WarehouseMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseMinOrderByAggregateInput">WarehouseMinOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseSumOrderByAggregateInput">WarehouseSumOrderByAggregateInput</a></li><li><a href="#type-inputType-WarehouseRelationFilter">WarehouseRelationFilter</a></li><li><a href="#type-inputType-VehicleCountOrderByAggregateInput">VehicleCountOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleAvgOrderByAggregateInput">VehicleAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleMaxOrderByAggregateInput">VehicleMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleMinOrderByAggregateInput">VehicleMinOrderByAggregateInput</a></li><li><a href="#type-inputType-VehicleSumOrderByAggregateInput">VehicleSumOrderByAggregateInput</a></li><li><a href="#type-inputType-EnumStatusFilter">EnumStatusFilter</a></li><li><a href="#type-inputType-DriverCountOrderByAggregateInput">DriverCountOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverAvgOrderByAggregateInput">DriverAvgOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverMaxOrderByAggregateInput">DriverMaxOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverMinOrderByAggregateInput">DriverMinOrderByAggregateInput</a></li><li><a href="#type-inputType-DriverSumOrderByAggregateInput">DriverSumOrderByAggregateInput</a></li><li><a href="#type-inputType-EnumStatusWithAggregatesFilter">EnumStatusWithAggregatesFilter</a></li><li><a href="#type-inputType-TripCreateNestedManyWithoutClientInput">TripCreateNestedManyWithoutClientInput</a></li><li><a href="#type-inputType-TripUncheckedCreateNestedManyWithoutClientInput">TripUncheckedCreateNestedManyWithoutClientInput</a></li><li><a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-TripUpdateManyWithoutClientNestedInput">TripUpdateManyWithoutClientNestedInput</a></li><li><a href="#type-inputType-IntFieldUpdateOperationsInput">IntFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateManyWithoutClientNestedInput">TripUncheckedUpdateManyWithoutClientNestedInput</a></li><li><a href="#type-inputType-StepCreateNestedManyWithoutTripInput">StepCreateNestedManyWithoutTripInput</a></li><li><a href="#type-inputType-ClientCreateNestedOneWithoutTripsInput">ClientCreateNestedOneWithoutTripsInput</a></li><li><a href="#type-inputType-StepUncheckedCreateNestedManyWithoutTripInput">StepUncheckedCreateNestedManyWithoutTripInput</a></li><li><a href="#type-inputType-StepUpdateManyWithoutTripNestedInput">StepUpdateManyWithoutTripNestedInput</a></li><li><a href="#type-inputType-ClientUpdateOneWithoutTripsNestedInput">ClientUpdateOneWithoutTripsNestedInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateManyWithoutTripNestedInput">StepUncheckedUpdateManyWithoutTripNestedInput</a></li><li><a href="#type-inputType-NullableIntFieldUpdateOperationsInput">NullableIntFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-TripCreateNestedOneWithoutStepsInput">TripCreateNestedOneWithoutStepsInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutStepInput">DriverAndVehicleCreateNestedManyWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutStepInput">DriverAndVehicleUncheckedCreateNestedManyWithoutStepInput</a></li><li><a href="#type-inputType-TripUpdateOneWithoutStepsNestedInput">TripUpdateOneWithoutStepsNestedInput</a></li><li><a href="#type-inputType-DateTimeFieldUpdateOperationsInput">DateTimeFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-StringFieldUpdateOperationsInput">StringFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithoutStepNestedInput">DriverAndVehicleUpdateManyWithoutStepNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutStepNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutStepNestedInput</a></li><li><a href="#type-inputType-StepCreateNestedOneWithoutDriverAndVehicleInput">StepCreateNestedOneWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateNestedOneWithoutDriverAndVehicleInput">VehicleCreateNestedOneWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverCreateNestedOneWithoutDriverAndVehicleInput">DriverCreateNestedOneWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUpdateOneWithoutDriverAndVehicleNestedInput">StepUpdateOneWithoutDriverAndVehicleNestedInput</a></li><li><a href="#type-inputType-VehicleUpdateOneWithoutDriverAndVehicleNestedInput">VehicleUpdateOneWithoutDriverAndVehicleNestedInput</a></li><li><a href="#type-inputType-DriverUpdateOneWithoutDriverAndVehicleNestedInput">DriverUpdateOneWithoutDriverAndVehicleNestedInput</a></li><li><a href="#type-inputType-VehicleCreateNestedManyWithoutWarehouseInput">VehicleCreateNestedManyWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverCreateNestedManyWithoutWarehouseInput">DriverCreateNestedManyWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUncheckedCreateNestedManyWithoutWarehouseInput">VehicleUncheckedCreateNestedManyWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUncheckedCreateNestedManyWithoutWarehouseInput">DriverUncheckedCreateNestedManyWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUpdateManyWithoutWarehouseNestedInput">VehicleUpdateManyWithoutWarehouseNestedInput</a></li><li><a href="#type-inputType-DriverUpdateManyWithoutWarehouseNestedInput">DriverUpdateManyWithoutWarehouseNestedInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateManyWithoutWarehouseNestedInput">VehicleUncheckedUpdateManyWithoutWarehouseNestedInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateManyWithoutWarehouseNestedInput">DriverUncheckedUpdateManyWithoutWarehouseNestedInput</a></li><li><a href="#type-inputType-WarehouseCreateNestedOneWithoutVehiclesInput">WarehouseCreateNestedOneWithoutVehiclesInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutVehicleInput">DriverAndVehicleCreateNestedManyWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutVehicleInput">DriverAndVehicleUncheckedCreateNestedManyWithoutVehicleInput</a></li><li><a href="#type-inputType-WarehouseUpdateOneWithoutVehiclesNestedInput">WarehouseUpdateOneWithoutVehiclesNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithoutVehicleNestedInput">DriverAndVehicleUpdateManyWithoutVehicleNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutVehicleNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutVehicleNestedInput</a></li><li><a href="#type-inputType-WarehouseCreateNestedOneWithoutDriverInput">WarehouseCreateNestedOneWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutDriverInput">DriverAndVehicleCreateNestedManyWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutDriverInput">DriverAndVehicleUncheckedCreateNestedManyWithoutDriverInput</a></li><li><a href="#type-inputType-EnumStatusFieldUpdateOperationsInput">EnumStatusFieldUpdateOperationsInput</a></li><li><a href="#type-inputType-WarehouseUpdateOneWithoutDriverNestedInput">WarehouseUpdateOneWithoutDriverNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithoutDriverNestedInput">DriverAndVehicleUpdateManyWithoutDriverNestedInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutDriverNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutDriverNestedInput</a></li><li><a href="#type-inputType-NestedIntFilter">NestedIntFilter</a></li><li><a href="#type-inputType-NestedStringNullableFilter">NestedStringNullableFilter</a></li><li><a href="#type-inputType-NestedIntWithAggregatesFilter">NestedIntWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedFloatFilter">NestedFloatFilter</a></li><li><a href="#type-inputType-NestedStringNullableWithAggregatesFilter">NestedStringNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedIntNullableFilter">NestedIntNullableFilter</a></li><li><a href="#type-inputType-NestedIntNullableWithAggregatesFilter">NestedIntNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a></li><li><a href="#type-inputType-NestedDateTimeFilter">NestedDateTimeFilter</a></li><li><a href="#type-inputType-NestedStringFilter">NestedStringFilter</a></li><li><a href="#type-inputType-NestedDateTimeWithAggregatesFilter">NestedDateTimeWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedStringWithAggregatesFilter">NestedStringWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedFloatNullableWithAggregatesFilter">NestedFloatNullableWithAggregatesFilter</a></li><li><a href="#type-inputType-NestedEnumStatusFilter">NestedEnumStatusFilter</a></li><li><a href="#type-inputType-NestedEnumStatusWithAggregatesFilter">NestedEnumStatusWithAggregatesFilter</a></li><li><a href="#type-inputType-TripCreateWithoutClientInput">TripCreateWithoutClientInput</a></li><li><a href="#type-inputType-TripUncheckedCreateWithoutClientInput">TripUncheckedCreateWithoutClientInput</a></li><li><a href="#type-inputType-TripCreateOrConnectWithoutClientInput">TripCreateOrConnectWithoutClientInput</a></li><li><a href="#type-inputType-TripCreateManyClientInputEnvelope">TripCreateManyClientInputEnvelope</a></li><li><a href="#type-inputType-TripUpsertWithWhereUniqueWithoutClientInput">TripUpsertWithWhereUniqueWithoutClientInput</a></li><li><a href="#type-inputType-TripUpdateWithWhereUniqueWithoutClientInput">TripUpdateWithWhereUniqueWithoutClientInput</a></li><li><a href="#type-inputType-TripUpdateManyWithWhereWithoutClientInput">TripUpdateManyWithWhereWithoutClientInput</a></li><li><a href="#type-inputType-TripScalarWhereInput">TripScalarWhereInput</a></li><li><a href="#type-inputType-StepCreateWithoutTripInput">StepCreateWithoutTripInput</a></li><li><a href="#type-inputType-StepUncheckedCreateWithoutTripInput">StepUncheckedCreateWithoutTripInput</a></li><li><a href="#type-inputType-StepCreateOrConnectWithoutTripInput">StepCreateOrConnectWithoutTripInput</a></li><li><a href="#type-inputType-StepCreateManyTripInputEnvelope">StepCreateManyTripInputEnvelope</a></li><li><a href="#type-inputType-ClientCreateWithoutTripsInput">ClientCreateWithoutTripsInput</a></li><li><a href="#type-inputType-ClientUncheckedCreateWithoutTripsInput">ClientUncheckedCreateWithoutTripsInput</a></li><li><a href="#type-inputType-ClientCreateOrConnectWithoutTripsInput">ClientCreateOrConnectWithoutTripsInput</a></li><li><a href="#type-inputType-StepUpsertWithWhereUniqueWithoutTripInput">StepUpsertWithWhereUniqueWithoutTripInput</a></li><li><a href="#type-inputType-StepUpdateWithWhereUniqueWithoutTripInput">StepUpdateWithWhereUniqueWithoutTripInput</a></li><li><a href="#type-inputType-StepUpdateManyWithWhereWithoutTripInput">StepUpdateManyWithWhereWithoutTripInput</a></li><li><a href="#type-inputType-StepScalarWhereInput">StepScalarWhereInput</a></li><li><a href="#type-inputType-ClientUpsertWithoutTripsInput">ClientUpsertWithoutTripsInput</a></li><li><a href="#type-inputType-ClientUpdateWithoutTripsInput">ClientUpdateWithoutTripsInput</a></li><li><a href="#type-inputType-ClientUncheckedUpdateWithoutTripsInput">ClientUncheckedUpdateWithoutTripsInput</a></li><li><a href="#type-inputType-TripCreateWithoutStepsInput">TripCreateWithoutStepsInput</a></li><li><a href="#type-inputType-TripUncheckedCreateWithoutStepsInput">TripUncheckedCreateWithoutStepsInput</a></li><li><a href="#type-inputType-TripCreateOrConnectWithoutStepsInput">TripCreateOrConnectWithoutStepsInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateWithoutStepInput">DriverAndVehicleCreateWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateWithoutStepInput">DriverAndVehicleUncheckedCreateWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateOrConnectWithoutStepInput">DriverAndVehicleCreateOrConnectWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyStepInputEnvelope">DriverAndVehicleCreateManyStepInputEnvelope</a></li><li><a href="#type-inputType-TripUpsertWithoutStepsInput">TripUpsertWithoutStepsInput</a></li><li><a href="#type-inputType-TripUpdateWithoutStepsInput">TripUpdateWithoutStepsInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateWithoutStepsInput">TripUncheckedUpdateWithoutStepsInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpsertWithWhereUniqueWithoutStepInput">DriverAndVehicleUpsertWithWhereUniqueWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithWhereUniqueWithoutStepInput">DriverAndVehicleUpdateWithWhereUniqueWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithWhereWithoutStepInput">DriverAndVehicleUpdateManyWithWhereWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleScalarWhereInput">DriverAndVehicleScalarWhereInput</a></li><li><a href="#type-inputType-StepCreateWithoutDriverAndVehicleInput">StepCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUncheckedCreateWithoutDriverAndVehicleInput">StepUncheckedCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepCreateOrConnectWithoutDriverAndVehicleInput">StepCreateOrConnectWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateWithoutDriverAndVehicleInput">VehicleCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleUncheckedCreateWithoutDriverAndVehicleInput">VehicleUncheckedCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateOrConnectWithoutDriverAndVehicleInput">VehicleCreateOrConnectWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverCreateWithoutDriverAndVehicleInput">DriverCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverUncheckedCreateWithoutDriverAndVehicleInput">DriverUncheckedCreateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverCreateOrConnectWithoutDriverAndVehicleInput">DriverCreateOrConnectWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUpsertWithoutDriverAndVehicleInput">StepUpsertWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUpdateWithoutDriverAndVehicleInput">StepUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateWithoutDriverAndVehicleInput">StepUncheckedUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleUpsertWithoutDriverAndVehicleInput">VehicleUpsertWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleUpdateWithoutDriverAndVehicleInput">VehicleUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateWithoutDriverAndVehicleInput">VehicleUncheckedUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverUpsertWithoutDriverAndVehicleInput">DriverUpsertWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverUpdateWithoutDriverAndVehicleInput">DriverUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateWithoutDriverAndVehicleInput">DriverUncheckedUpdateWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateWithoutWarehouseInput">VehicleCreateWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUncheckedCreateWithoutWarehouseInput">VehicleUncheckedCreateWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleCreateOrConnectWithoutWarehouseInput">VehicleCreateOrConnectWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleCreateManyWarehouseInputEnvelope">VehicleCreateManyWarehouseInputEnvelope</a></li><li><a href="#type-inputType-DriverCreateWithoutWarehouseInput">DriverCreateWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUncheckedCreateWithoutWarehouseInput">DriverUncheckedCreateWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverCreateOrConnectWithoutWarehouseInput">DriverCreateOrConnectWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverCreateManyWarehouseInputEnvelope">DriverCreateManyWarehouseInputEnvelope</a></li><li><a href="#type-inputType-VehicleUpsertWithWhereUniqueWithoutWarehouseInput">VehicleUpsertWithWhereUniqueWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUpdateWithWhereUniqueWithoutWarehouseInput">VehicleUpdateWithWhereUniqueWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUpdateManyWithWhereWithoutWarehouseInput">VehicleUpdateManyWithWhereWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleScalarWhereInput">VehicleScalarWhereInput</a></li><li><a href="#type-inputType-DriverUpsertWithWhereUniqueWithoutWarehouseInput">DriverUpsertWithWhereUniqueWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUpdateWithWhereUniqueWithoutWarehouseInput">DriverUpdateWithWhereUniqueWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUpdateManyWithWhereWithoutWarehouseInput">DriverUpdateManyWithWhereWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverScalarWhereInput">DriverScalarWhereInput</a></li><li><a href="#type-inputType-WarehouseCreateWithoutVehiclesInput">WarehouseCreateWithoutVehiclesInput</a></li><li><a href="#type-inputType-WarehouseUncheckedCreateWithoutVehiclesInput">WarehouseUncheckedCreateWithoutVehiclesInput</a></li><li><a href="#type-inputType-WarehouseCreateOrConnectWithoutVehiclesInput">WarehouseCreateOrConnectWithoutVehiclesInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateWithoutVehicleInput">DriverAndVehicleCreateWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateWithoutVehicleInput">DriverAndVehicleUncheckedCreateWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateOrConnectWithoutVehicleInput">DriverAndVehicleCreateOrConnectWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyVehicleInputEnvelope">DriverAndVehicleCreateManyVehicleInputEnvelope</a></li><li><a href="#type-inputType-WarehouseUpsertWithoutVehiclesInput">WarehouseUpsertWithoutVehiclesInput</a></li><li><a href="#type-inputType-WarehouseUpdateWithoutVehiclesInput">WarehouseUpdateWithoutVehiclesInput</a></li><li><a href="#type-inputType-WarehouseUncheckedUpdateWithoutVehiclesInput">WarehouseUncheckedUpdateWithoutVehiclesInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpsertWithWhereUniqueWithoutVehicleInput">DriverAndVehicleUpsertWithWhereUniqueWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithWhereUniqueWithoutVehicleInput">DriverAndVehicleUpdateWithWhereUniqueWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithWhereWithoutVehicleInput">DriverAndVehicleUpdateManyWithWhereWithoutVehicleInput</a></li><li><a href="#type-inputType-WarehouseCreateWithoutDriverInput">WarehouseCreateWithoutDriverInput</a></li><li><a href="#type-inputType-WarehouseUncheckedCreateWithoutDriverInput">WarehouseUncheckedCreateWithoutDriverInput</a></li><li><a href="#type-inputType-WarehouseCreateOrConnectWithoutDriverInput">WarehouseCreateOrConnectWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateWithoutDriverInput">DriverAndVehicleCreateWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedCreateWithoutDriverInput">DriverAndVehicleUncheckedCreateWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateOrConnectWithoutDriverInput">DriverAndVehicleCreateOrConnectWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyDriverInputEnvelope">DriverAndVehicleCreateManyDriverInputEnvelope</a></li><li><a href="#type-inputType-WarehouseUpsertWithoutDriverInput">WarehouseUpsertWithoutDriverInput</a></li><li><a href="#type-inputType-WarehouseUpdateWithoutDriverInput">WarehouseUpdateWithoutDriverInput</a></li><li><a href="#type-inputType-WarehouseUncheckedUpdateWithoutDriverInput">WarehouseUncheckedUpdateWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpsertWithWhereUniqueWithoutDriverInput">DriverAndVehicleUpsertWithWhereUniqueWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithWhereUniqueWithoutDriverInput">DriverAndVehicleUpdateWithWhereUniqueWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateManyWithWhereWithoutDriverInput">DriverAndVehicleUpdateManyWithWhereWithoutDriverInput</a></li><li><a href="#type-inputType-TripCreateManyClientInput">TripCreateManyClientInput</a></li><li><a href="#type-inputType-TripUpdateWithoutClientInput">TripUpdateWithoutClientInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateWithoutClientInput">TripUncheckedUpdateWithoutClientInput</a></li><li><a href="#type-inputType-TripUncheckedUpdateManyWithoutTripsInput">TripUncheckedUpdateManyWithoutTripsInput</a></li><li><a href="#type-inputType-StepCreateManyTripInput">StepCreateManyTripInput</a></li><li><a href="#type-inputType-StepUpdateWithoutTripInput">StepUpdateWithoutTripInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateWithoutTripInput">StepUncheckedUpdateWithoutTripInput</a></li><li><a href="#type-inputType-StepUncheckedUpdateManyWithoutStepsInput">StepUncheckedUpdateManyWithoutStepsInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyStepInput">DriverAndVehicleCreateManyStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithoutStepInput">DriverAndVehicleUpdateWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateWithoutStepInput">DriverAndVehicleUncheckedUpdateWithoutStepInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutDriverAndVehicleInput">DriverAndVehicleUncheckedUpdateManyWithoutDriverAndVehicleInput</a></li><li><a href="#type-inputType-VehicleCreateManyWarehouseInput">VehicleCreateManyWarehouseInput</a></li><li><a href="#type-inputType-DriverCreateManyWarehouseInput">DriverCreateManyWarehouseInput</a></li><li><a href="#type-inputType-VehicleUpdateWithoutWarehouseInput">VehicleUpdateWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateWithoutWarehouseInput">VehicleUncheckedUpdateWithoutWarehouseInput</a></li><li><a href="#type-inputType-VehicleUncheckedUpdateManyWithoutVehiclesInput">VehicleUncheckedUpdateManyWithoutVehiclesInput</a></li><li><a href="#type-inputType-DriverUpdateWithoutWarehouseInput">DriverUpdateWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateWithoutWarehouseInput">DriverUncheckedUpdateWithoutWarehouseInput</a></li><li><a href="#type-inputType-DriverUncheckedUpdateManyWithoutDriverInput">DriverUncheckedUpdateManyWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyVehicleInput">DriverAndVehicleCreateManyVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithoutVehicleInput">DriverAndVehicleUpdateWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateWithoutVehicleInput">DriverAndVehicleUncheckedUpdateWithoutVehicleInput</a></li><li><a href="#type-inputType-DriverAndVehicleCreateManyDriverInput">DriverAndVehicleCreateManyDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUpdateWithoutDriverInput">DriverAndVehicleUpdateWithoutDriverInput</a></li><li><a href="#type-inputType-DriverAndVehicleUncheckedUpdateWithoutDriverInput">DriverAndVehicleUncheckedUpdateWithoutDriverInput</a></li>
               </ul>
             </li>
             <li class="mb-4">
@@ -995,9 +995,9 @@
       </td>
     </tr>
     
-    <tr id="model-Trip-Client">
+    <tr id="model-Trip-client">
       <td class="px-4 py-2 border">
-       Client 
+       client 
       </td>
       <td class="px-4 py-2 border">
        <a href="#type-outputType-Client">Client?</a>
@@ -1798,6 +1798,26 @@
       </td>
       <td class="px-4 py-2 border">
         <b>Yes</b>
+      </td>
+      <td class="px-4 py-2 border">
+        -
+      </td>
+    </tr>
+    
+    <tr id="model-Step-distance">
+      <td class="px-4 py-2 border">
+       distance 
+      </td>
+      <td class="px-4 py-2 border">
+       Float?
+      </td>
+      <td class="px-4 py-2 border">
+        <ul>
+          <li> - </li>
+        </ul>
+      </td>
+      <td class="px-4 py-2 border">
+        No
       </td>
       <td class="px-4 py-2 border">
         -
@@ -3322,9 +3342,9 @@
       </td>
     </tr>
     
-    <tr id="model-Warehouse-Driver">
+    <tr id="model-Warehouse-driver">
       <td class="px-4 py-2 border">
-       Driver 
+       driver 
       </td>
       <td class="px-4 py-2 border">
        <a href="#type-outputType-Driver">Driver[]</a>
@@ -4031,9 +4051,9 @@
       </td>
     </tr>
     
-    <tr id="model-Vehicle-Warehouse">
+    <tr id="model-Vehicle-warehouse">
       <td class="px-4 py-2 border">
-       Warehouse 
+       warehouse 
       </td>
       <td class="px-4 py-2 border">
        <a href="#type-outputType-Warehouse">Warehouse?</a>
@@ -4071,9 +4091,9 @@
       </td>
     </tr>
     
-    <tr id="model-Vehicle-DriverAndVehicle">
+    <tr id="model-Vehicle-driverAndVehicle">
       <td class="px-4 py-2 border">
-       DriverAndVehicle 
+       driverAndVehicle 
       </td>
       <td class="px-4 py-2 border">
        <a href="#type-outputType-DriverAndVehicle">DriverAndVehicle[]</a>
@@ -4820,9 +4840,9 @@
       </td>
     </tr>
     
-    <tr id="model-Driver-DriverAndVehicle">
+    <tr id="model-Driver-driverAndVehicle">
       <td class="px-4 py-2 border">
-       DriverAndVehicle 
+       driverAndVehicle 
       </td>
       <td class="px-4 py-2 border">
        <a href="#type-outputType-DriverAndVehicle">DriverAndVehicle[]</a>
@@ -5973,7 +5993,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Client </td>
+        client </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-ClientRelationFilter">ClientRelationFilter</a> | <a href="#type-inputType-ClientWhereInput">ClientWhereInput</a> | Null
       </td>
@@ -6037,7 +6057,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Client </td>
+        client </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-ClientOrderByWithRelationInput">ClientOrderByWithRelationInput</a>
       </td>
@@ -6401,6 +6421,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-FloatNullableFilter">FloatNullableFilter</a> | Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-StringNullableFilter">StringNullableFilter</a> | String | Null
@@ -6526,6 +6558,18 @@
     <tr>
       <td class="px-4 py-2 border">
         to </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-SortOrder">SortOrder</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-SortOrder">SortOrder</a>
       </td>
@@ -6678,6 +6722,18 @@
     <tr>
       <td class="px-4 py-2 border">
         to </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-SortOrder">SortOrder</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-SortOrder">SortOrder</a>
       </td>
@@ -6892,6 +6948,18 @@
 
       <td class="px-4 py-2 border">
         No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-FloatNullableWithAggregatesFilter">FloatNullableWithAggregatesFilter</a> | Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
       </td>
     </tr>
     
@@ -7497,7 +7565,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverListRelationFilter">DriverListRelationFilter</a>
       </td>
@@ -7561,7 +7629,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverOrderByRelationAggregateInput">DriverOrderByRelationAggregateInput</a>
       </td>
@@ -7865,7 +7933,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Warehouse </td>
+        warehouse </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-WarehouseRelationFilter">WarehouseRelationFilter</a> | <a href="#type-inputType-WarehouseWhereInput">WarehouseWhereInput</a> | Null
       </td>
@@ -7889,7 +7957,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleListRelationFilter">DriverAndVehicleListRelationFilter</a>
       </td>
@@ -7953,7 +8021,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Warehouse </td>
+        warehouse </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-WarehouseOrderByWithRelationInput">WarehouseOrderByWithRelationInput</a>
       </td>
@@ -7977,7 +8045,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleOrderByRelationAggregateInput">DriverAndVehicleOrderByRelationAggregateInput</a>
       </td>
@@ -8353,7 +8421,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleListRelationFilter">DriverAndVehicleListRelationFilter</a>
       </td>
@@ -8441,7 +8509,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleOrderByRelationAggregateInput">DriverAndVehicleOrderByRelationAggregateInput</a>
       </td>
@@ -9193,7 +9261,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Client </td>
+        client </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-ClientCreateNestedOneWithoutTripsInput">ClientCreateNestedOneWithoutTripsInput</a>
       </td>
@@ -9285,7 +9353,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Client </td>
+        client </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-ClientUpdateOneWithoutTripsNestedInput">ClientUpdateOneWithoutTripsNestedInput</a>
       </td>
@@ -9521,6 +9589,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | Null
@@ -9645,6 +9725,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | Null
@@ -9752,6 +9844,18 @@
 
       <td class="px-4 py-2 border">
         No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
       </td>
     </tr>
     
@@ -9881,6 +9985,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | <a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a> | Null
@@ -10005,6 +10121,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | Null
@@ -10088,6 +10216,18 @@
 
       <td class="px-4 py-2 border">
         No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
       </td>
     </tr>
     
@@ -10200,6 +10340,18 @@
 
       <td class="px-4 py-2 border">
         No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
       </td>
     </tr>
     
@@ -10645,7 +10797,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverCreateNestedManyWithoutWarehouseInput">DriverCreateNestedManyWithoutWarehouseInput</a>
       </td>
@@ -10709,7 +10861,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverUncheckedCreateNestedManyWithoutWarehouseInput">DriverUncheckedCreateNestedManyWithoutWarehouseInput</a>
       </td>
@@ -10761,7 +10913,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverUpdateManyWithoutWarehouseNestedInput">DriverUpdateManyWithoutWarehouseNestedInput</a>
       </td>
@@ -10825,7 +10977,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverUncheckedUpdateManyWithoutWarehouseNestedInput">DriverUncheckedUpdateManyWithoutWarehouseNestedInput</a>
       </td>
@@ -10985,7 +11137,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Warehouse </td>
+        warehouse </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-WarehouseCreateNestedOneWithoutVehiclesInput">WarehouseCreateNestedOneWithoutVehiclesInput</a>
       </td>
@@ -10997,7 +11149,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutVehicleInput">DriverAndVehicleCreateNestedManyWithoutVehicleInput</a>
       </td>
@@ -11073,7 +11225,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutVehicleInput">DriverAndVehicleUncheckedCreateNestedManyWithoutVehicleInput</a>
       </td>
@@ -11125,7 +11277,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Warehouse </td>
+        warehouse </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-WarehouseUpdateOneWithoutVehiclesNestedInput">WarehouseUpdateOneWithoutVehiclesNestedInput</a>
       </td>
@@ -11137,7 +11289,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUpdateManyWithoutVehicleNestedInput">DriverAndVehicleUpdateManyWithoutVehicleNestedInput</a>
       </td>
@@ -11213,7 +11365,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutVehicleNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutVehicleNestedInput</a>
       </td>
@@ -11445,7 +11597,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutDriverInput">DriverAndVehicleCreateNestedManyWithoutDriverInput</a>
       </td>
@@ -11521,7 +11673,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutDriverInput">DriverAndVehicleUncheckedCreateNestedManyWithoutDriverInput</a>
       </td>
@@ -11585,7 +11737,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUpdateManyWithoutDriverNestedInput">DriverAndVehicleUpdateManyWithoutDriverNestedInput</a>
       </td>
@@ -11661,7 +11813,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutDriverNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutDriverNestedInput</a>
       </td>
@@ -13692,6 +13844,118 @@
       </div>
     <hr class="my-4" />
       <div>
+        <h3 class="mb-2 text-xl" id="type-inputType-FloatNullableFilter">FloatNullableFilter</h3>
+        <table class="table-auto">
+          <thead>
+            <tr>
+              <th class="px-4 py-2 border">Name</th>
+              <th class="px-4 py-2 border">Type</th>
+              <th class="px-4 py-2 border">Nullable</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+    <tr>
+      <td class="px-4 py-2 border">
+        equals </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        in </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        notIn </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        lt </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        lte </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        gt </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        gte </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        not </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+          </tbody>
+        </table>
+      </div>
+    <hr class="my-4" />
+      <div>
         <h3 class="mb-2 text-xl" id="type-inputType-DriverAndVehicleListRelationFilter">DriverAndVehicleListRelationFilter</h3>
         <table class="table-auto">
           <thead>
@@ -13857,6 +14121,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-SortOrder">SortOrder</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-SortOrder">SortOrder</a>
@@ -13910,6 +14186,18 @@
     <tr>
       <td class="px-4 py-2 border">
         tripId </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-SortOrder">SortOrder</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-SortOrder">SortOrder</a>
       </td>
@@ -14010,6 +14298,18 @@
     <tr>
       <td class="px-4 py-2 border">
         to </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-SortOrder">SortOrder</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-SortOrder">SortOrder</a>
       </td>
@@ -14133,6 +14433,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-SortOrder">SortOrder</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-SortOrder">SortOrder</a>
@@ -14186,6 +14498,18 @@
     <tr>
       <td class="px-4 py-2 border">
         tripId </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-SortOrder">SortOrder</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-SortOrder">SortOrder</a>
       </td>
@@ -14532,6 +14856,178 @@
         _max </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-NestedStringFilter">NestedStringFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+          </tbody>
+        </table>
+      </div>
+    <hr class="my-4" />
+      <div>
+        <h3 class="mb-2 text-xl" id="type-inputType-FloatNullableWithAggregatesFilter">FloatNullableWithAggregatesFilter</h3>
+        <table class="table-auto">
+          <thead>
+            <tr>
+              <th class="px-4 py-2 border">Name</th>
+              <th class="px-4 py-2 border">Type</th>
+              <th class="px-4 py-2 border">Nullable</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+    <tr>
+      <td class="px-4 py-2 border">
+        equals </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        in </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        notIn </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        lt </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        lte </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        gt </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        gte </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        not </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NestedFloatNullableWithAggregatesFilter">NestedFloatNullableWithAggregatesFilter</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _count </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedIntNullableFilter">NestedIntNullableFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _avg </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _sum </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _min </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _max </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a>
       </td>
 
       <td class="px-4 py-2 border">
@@ -17596,6 +18092,82 @@
         set </td>
       <td class="px-4 py-2 border">
         String
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+          </tbody>
+        </table>
+      </div>
+    <hr class="my-4" />
+      <div>
+        <h3 class="mb-2 text-xl" id="type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</h3>
+        <table class="table-auto">
+          <thead>
+            <tr>
+              <th class="px-4 py-2 border">Name</th>
+              <th class="px-4 py-2 border">Type</th>
+              <th class="px-4 py-2 border">Nullable</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+    <tr>
+      <td class="px-4 py-2 border">
+        set </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        increment </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        decrement </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        multiply </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        divide </td>
+      <td class="px-4 py-2 border">
+        Float
       </td>
 
       <td class="px-4 py-2 border">
@@ -22104,6 +22676,178 @@
       </div>
     <hr class="my-4" />
       <div>
+        <h3 class="mb-2 text-xl" id="type-inputType-NestedFloatNullableWithAggregatesFilter">NestedFloatNullableWithAggregatesFilter</h3>
+        <table class="table-auto">
+          <thead>
+            <tr>
+              <th class="px-4 py-2 border">Name</th>
+              <th class="px-4 py-2 border">Type</th>
+              <th class="px-4 py-2 border">Nullable</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+    <tr>
+      <td class="px-4 py-2 border">
+        equals </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        in </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        notIn </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        lt </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        lte </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        gt </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        gte </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        not </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NestedFloatNullableWithAggregatesFilter">NestedFloatNullableWithAggregatesFilter</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _count </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedIntNullableFilter">NestedIntNullableFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _avg </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _sum </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _min </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        _max </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-NestedFloatNullableFilter">NestedFloatNullableFilter</a>
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+          </tbody>
+        </table>
+      </div>
+    <hr class="my-4" />
+      <div>
         <h3 class="mb-2 text-xl" id="type-inputType-NestedEnumStatusFilter">NestedEnumStatusFilter</h3>
         <table class="table-auto">
           <thead>
@@ -22685,6 +23429,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | Null
@@ -22792,6 +23548,18 @@
 
       <td class="px-4 py-2 border">
         No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
       </td>
     </tr>
     
@@ -23325,6 +24093,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        <a href="#type-inputType-FloatNullableFilter">FloatNullableFilter</a> | Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-StringNullableFilter">StringNullableFilter</a> | String | Null
@@ -23521,7 +24301,7 @@
           
     <tr>
       <td class="px-4 py-2 border">
-        Client </td>
+        client </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-ClientCreateNestedOneWithoutTripsInput">ClientCreateNestedOneWithoutTripsInput</a>
       </td>
@@ -23841,7 +24621,7 @@
           
     <tr>
       <td class="px-4 py-2 border">
-        Client </td>
+        client </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-ClientUpdateOneWithoutTripsNestedInput">ClientUpdateOneWithoutTripsNestedInput</a>
       </td>
@@ -24201,6 +24981,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | Null
@@ -24313,6 +25105,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | Null
@@ -24417,7 +25221,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Warehouse </td>
+        warehouse </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-WarehouseCreateNestedOneWithoutVehiclesInput">WarehouseCreateNestedOneWithoutVehiclesInput</a>
       </td>
@@ -24805,6 +25609,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | <a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a> | Null
@@ -24917,6 +25733,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | <a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a> | Null
@@ -25021,7 +25849,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Warehouse </td>
+        warehouse </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-WarehouseUpdateOneWithoutVehiclesNestedInput">WarehouseUpdateOneWithoutVehiclesNestedInput</a>
       </td>
@@ -25293,7 +26121,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutVehicleInput">DriverAndVehicleCreateNestedManyWithoutVehicleInput</a>
       </td>
@@ -25357,7 +26185,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutVehicleInput">DriverAndVehicleUncheckedCreateNestedManyWithoutVehicleInput</a>
       </td>
@@ -25489,7 +26317,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleCreateNestedManyWithoutDriverInput">DriverAndVehicleCreateNestedManyWithoutDriverInput</a>
       </td>
@@ -25553,7 +26381,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUncheckedCreateNestedManyWithoutDriverInput">DriverAndVehicleUncheckedCreateNestedManyWithoutDriverInput</a>
       </td>
@@ -26137,7 +26965,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverCreateNestedManyWithoutWarehouseInput">DriverCreateNestedManyWithoutWarehouseInput</a>
       </td>
@@ -26189,7 +27017,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverUncheckedCreateNestedManyWithoutWarehouseInput">DriverUncheckedCreateNestedManyWithoutWarehouseInput</a>
       </td>
@@ -26481,7 +27309,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverUpdateManyWithoutWarehouseNestedInput">DriverUpdateManyWithoutWarehouseNestedInput</a>
       </td>
@@ -26533,7 +27361,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverUncheckedUpdateManyWithoutWarehouseNestedInput">DriverUncheckedUpdateManyWithoutWarehouseNestedInput</a>
       </td>
@@ -27445,6 +28273,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | Null
@@ -27528,6 +28368,18 @@
 
       <td class="px-4 py-2 border">
         No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
       </td>
     </tr>
     
@@ -27645,6 +28497,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         String | <a href="#type-inputType-NullableStringFieldUpdateOperationsInput">NullableStringFieldUpdateOperationsInput</a> | Null
@@ -27752,6 +28616,18 @@
 
       <td class="px-4 py-2 border">
         No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float | <a href="#type-inputType-NullableFloatFieldUpdateOperationsInput">NullableFloatFieldUpdateOperationsInput</a> | Null
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
       </td>
     </tr>
     
@@ -28121,7 +28997,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUpdateManyWithoutVehicleNestedInput">DriverAndVehicleUpdateManyWithoutVehicleNestedInput</a>
       </td>
@@ -28185,7 +29061,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutVehicleNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutVehicleNestedInput</a>
       </td>
@@ -28289,7 +29165,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUpdateManyWithoutDriverNestedInput">DriverAndVehicleUpdateManyWithoutDriverNestedInput</a>
       </td>
@@ -28353,7 +29229,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-inputType-DriverAndVehicleUncheckedUpdateManyWithoutDriverNestedInput">DriverAndVehicleUncheckedUpdateManyWithoutDriverNestedInput</a>
       </td>
@@ -28839,7 +29715,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Client </td>
+        client </td>
       <td class="px-4 py-2 border">
         <a href="#type-outputType-Client">Client</a>
       </td>
@@ -28970,6 +29846,18 @@
 
       <td class="px-4 py-2 border">
         <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
       </td>
     </tr>
     
@@ -29175,7 +30063,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         <a href="#type-outputType-Driver">Driver[]</a>
       </td>
@@ -29251,7 +30139,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Warehouse </td>
+        warehouse </td>
       <td class="px-4 py-2 border">
         <a href="#type-outputType-Warehouse">Warehouse</a>
       </td>
@@ -29275,7 +30163,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-outputType-DriverAndVehicle">DriverAndVehicle[]</a>
       </td>
@@ -29375,7 +30263,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         <a href="#type-outputType-DriverAndVehicle">DriverAndVehicle[]</a>
       </td>
@@ -29934,6 +30822,18 @@
 
       <td class="px-4 py-2 border">
         <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
       </td>
     </tr>
     
@@ -31471,6 +32371,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Int
+      </td>
+
+      <td class="px-4 py-2 border">
+        <strong>Yes</strong>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         commentary </td>
       <td class="px-4 py-2 border">
         Int
@@ -31547,6 +32459,18 @@
     
     <tr>
       <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
         passengersCount </td>
       <td class="px-4 py-2 border">
         Float
@@ -31590,6 +32514,18 @@
         tripId </td>
       <td class="px-4 py-2 border">
         Int
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float
       </td>
 
       <td class="px-4 py-2 border">
@@ -31690,6 +32626,18 @@
         to </td>
       <td class="px-4 py-2 border">
         String
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float
       </td>
 
       <td class="px-4 py-2 border">
@@ -31802,6 +32750,18 @@
         to </td>
       <td class="px-4 py-2 border">
         String
+      </td>
+
+      <td class="px-4 py-2 border">
+        No
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="px-4 py-2 border">
+        distance </td>
+      <td class="px-4 py-2 border">
+        Float
       </td>
 
       <td class="px-4 py-2 border">
@@ -32195,7 +33155,7 @@
     
     <tr>
       <td class="px-4 py-2 border">
-        Driver </td>
+        driver </td>
       <td class="px-4 py-2 border">
         Int
       </td>
@@ -32411,7 +33371,7 @@
           
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         Int
       </td>
@@ -32747,7 +33707,7 @@
           
     <tr>
       <td class="px-4 py-2 border">
-        DriverAndVehicle </td>
+        driverAndVehicle </td>
       <td class="px-4 py-2 border">
         Int
       </td>

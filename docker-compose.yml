@@ -5,7 +5,7 @@ services:
     container_name: db
     environment:
       MYSQL_ROOT_PASSWORD: my_secret_password
-      MYSQL_DATABASE: app_db
+      MYSQL_DATABASE: navouest
       MYSQL_USER: db_user
       MYSQL_PASSWORD: db_user_pass
     ports:
