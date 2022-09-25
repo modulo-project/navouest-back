@@ -6,6 +6,5 @@ import { GoogleService } from 'src/google/google.service';
 @Module({
   controllers: [TripController],
   providers: [TripService, GoogleService],
-  imports: [GoogleService],
 })
 export class TripModule {}

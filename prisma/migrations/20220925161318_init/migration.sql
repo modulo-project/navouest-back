@@ -24,6 +24,7 @@ CREATE TABLE `Step` (
     `endedAt` DATETIME(3) NOT NULL,
     `from` VARCHAR(191) NOT NULL,
     `to` VARCHAR(191) NOT NULL,
+    `distance` DOUBLE NULL,
     `commentary` VARCHAR(191) NULL,
     `passengersCount` INTEGER NULL,
 

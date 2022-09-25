@@ -5,6 +5,9 @@
   "author": "Anthony <8291454-ahelliet@users.noreply.gitlab.com>",
   "private": true,
   "license": "UNLICENSED",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "scripts": {
     "prepare": "husky install",
     "commit": "git-cz",
@@ -99,9 +102,6 @@
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
-  },
-  "prisma": {
-    "seed": "ts-node prisma/seed.ts"
   },
   "main": "index.js",
   "repository": "https://github.com/modulo-project/navouest-back.git"
