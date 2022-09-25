@@ -18,7 +18,6 @@ export class GoogleService {
     });
 
     const distance = results.data.rows[0].elements[0].distance.value;
-
     return distance;
   }
 }

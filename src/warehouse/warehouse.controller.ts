@@ -8,9 +8,8 @@ import {
   Delete,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { CreateWarehouseDto } from 'src/prisma-generated/create-warehouse.dto';
-import { UpdateWarehouseDto } from 'src/prisma-generated/update-warehouse.dto';
 import { WarehouseService } from './warehouse.service';
+import { Prisma } from '.prisma/client';
 
 @ApiTags('Warehouses')
 @Controller('warehouse')
@@ -18,7 +17,7 @@ export class WarehouseController {
   constructor(private readonly warehouseService: WarehouseService) {}
 
   @Post()
-  create(@Body() createWarehouseDto: CreateWarehouseDto) {
+  create(@Body() createWarehouseDto: Prisma.WarehouseCreateInput) {
     return this.warehouseService.create(createWarehouseDto);
   }
 
@@ -35,7 +34,7 @@ export class WarehouseController {
   @Patch(':id')
   update(
     @Param('id') id: number,
-    @Body() updateWarehouseDto: UpdateWarehouseDto,
+    @Body() updateWarehouseDto: Prisma.WarehouseUpdateInput,
   ) {
     return this.warehouseService.update(id, updateWarehouseDto);
   }

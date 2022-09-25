@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { CreateStepDto } from 'src/prisma-generated/create-step.dto';
-import { UpdateStepDto } from 'src/prisma-generated/update-step.dto';
+import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { GoogleService } from '../google/google.service';
 
@@ -11,16 +10,8 @@ export class StepService {
     private googleService: GoogleService,
   ) {}
 
-  async create(createStepDto: CreateStepDto) {
-    const newStep = createStepDto;
-
-    newStep.distance = await this.googleService.getDistance(
-      createStepDto.from,
-      createStepDto.to,
-    );
-
-    await this.prismaService.step.create({ data: newStep });
-    return newStep;
+  async create(createStepDto: Prisma.StepCreateInput) {
+    await this.prismaService.step.create({ data: createStepDto });
   }
 
   findAll() {
@@ -31,7 +22,7 @@ export class StepService {
     return this.prismaService.step.findUnique({ where: { id: Number(id) } });
   }
 
-  update(id: number, updateStepDto: UpdateStepDto) {
+  update(id: number, updateStepDto: Prisma.StepUpdateInput) {
     return this.prismaService.step.update({
       where: { id: Number(id) },
       data: updateStepDto,

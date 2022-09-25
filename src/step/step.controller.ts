@@ -8,9 +8,8 @@ import {
   Delete,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { CreateStepDto } from 'src/prisma-generated/create-step.dto';
-import { UpdateStepDto } from 'src/prisma-generated/update-step.dto';
 import { StepService } from './step.service';
+import { Prisma } from '@prisma/client';
 
 @ApiTags('Steps')
 @Controller('step')
@@ -18,7 +17,7 @@ export class StepController {
   constructor(private readonly stepService: StepService) {}
 
   @Post()
-  create(@Body() createStepDto: CreateStepDto) {
+  create(@Body() createStepDto: Prisma.StepCreateInput) {
     return this.stepService.create(createStepDto);
   }
 
@@ -33,7 +32,10 @@ export class StepController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: number, @Body() updateStepDto: UpdateStepDto) {
+  update(
+    @Param('id') id: number,
+    @Body() updateStepDto: Prisma.StepUpdateInput,
+  ) {
     return this.stepService.update(id, updateStepDto);
   }
 

@@ -1,13 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import { CreateVehicleDto } from 'src/prisma-generated/create-vehicle.dto';
-import { UpdateVehicleDto } from 'src/prisma-generated/update-vehicle.dto';
+import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class VehicleService {
   constructor(private readonly prismaService: PrismaService) {}
 
-  create(createVehicleDto: CreateVehicleDto) {
+  create(createVehicleDto: Prisma.VehicleCreateInput) {
     return this.prismaService.vehicle.create({ data: createVehicleDto });
   }
 
@@ -19,7 +18,7 @@ export class VehicleService {
     return this.prismaService.vehicle.findUnique({ where: { id: Number(id) } });
   }
 
-  update(id: number, updateVehicleDto: UpdateVehicleDto) {
+  update(id: number, updateVehicleDto: Prisma.VehicleUpdateInput) {
     return this.prismaService.vehicle.update({
       where: { id: Number(id) },
       data: updateVehicleDto,

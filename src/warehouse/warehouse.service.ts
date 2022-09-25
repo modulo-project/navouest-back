@@ -1,13 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import { CreateWarehouseDto } from 'src/prisma-generated/create-warehouse.dto';
-import { UpdateWarehouseDto } from 'src/prisma-generated/update-warehouse.dto';
 import { PrismaService } from 'src/prisma/prisma.service';
+import { Prisma } from '.prisma/client';
 
 @Injectable()
 export class WarehouseService {
   constructor(private readonly prismaService: PrismaService) {}
 
-  create(createWarehouseDto: CreateWarehouseDto) {
+  create(createWarehouseDto: Prisma.WarehouseCreateInput) {
     return this.prismaService.warehouse.create({ data: createWarehouseDto });
   }
 
@@ -21,7 +20,7 @@ export class WarehouseService {
     });
   }
 
-  update(id: number, updateWarehouseDto: UpdateWarehouseDto) {
+  update(id: number, updateWarehouseDto: Prisma.WarehouseUpdateInput) {
     return this.prismaService.warehouse.update({
       where: { id: Number(id) },
       data: updateWarehouseDto,

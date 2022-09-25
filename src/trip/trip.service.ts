@@ -1,14 +1,54 @@
+import { Prisma } from '.prisma/client';
 import { Injectable } from '@nestjs/common';
-import { CreateTripDto } from 'src/prisma-generated/create-trip.dto';
-import { UpdateTripDto } from 'src/prisma-generated/update-trip.dto';
+import { GoogleService } from 'src/google/google.service';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class TripService {
-  constructor(private readonly prismaService: PrismaService) {}
+  constructor(
+    private readonly prismaService: PrismaService,
+    private readonly googleService: GoogleService,
+  ) {}
 
-  create(createTripDto: CreateTripDto) {
-    return this.prismaService.trip.create({ data: createTripDto });
+  // TODO: Récupérer les données depuis le controller et les passer à la fonction pour récupérer
+  // la distance de chaque étape avant de sauvegarder le trajet et toutes ses étapes
+  async create() {
+    const body: Prisma.StepCreateManyTripInput[] = [
+      {
+        startedAt: new Date(Date.now()),
+        endedAt: new Date(Date.now()),
+        from: 'Paris',
+        to: 'Lyon',
+      },
+      {
+        startedAt: new Date(Date.now()),
+        endedAt: new Date(Date.now()),
+        from: 'Lyon',
+        to: 'Marseille',
+      },
+      {
+        startedAt: new Date(Date.now()),
+        endedAt: new Date(Date.now()),
+        from: 'Marseille',
+        to: 'Paris',
+      },
+    ];
+
+    for (let i = 0; i < body.length; i++) {
+      body[i].distance = await this.googleService.getDistance(
+        body[i].from,
+        body[i].to,
+      );
+    }
+
+    const newTrip: Prisma.TripUncheckedCreateInput = {
+      steps: {
+        createMany: {
+          data: body,
+        },
+      },
+    };
+    return this.prismaService.trip.create({ data: newTrip });
   }
 
   findAll() {
@@ -19,7 +59,7 @@ export class TripService {
     return this.prismaService.trip.findUnique({ where: { id: Number(id) } });
   }
 
-  update(id: number, updateTripDto: UpdateTripDto) {
+  update(id: number, updateTripDto: Prisma.TripUpdateInput) {
     return this.prismaService.trip.update({
       where: { id: Number(id) },
       data: updateTripDto,

@@ -8,9 +8,7 @@ import {
   Delete,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { Client } from '@prisma/client';
-import { CreateClientDto } from 'src/prisma-generated/create-client.dto';
-import { UpdateClientDto } from 'src/prisma-generated/update-client.dto';
+import { Client, Prisma } from '@prisma/client';
 import { ClientService } from './client.service';
 
 @ApiTags('Clients')
@@ -20,7 +18,7 @@ export class ClientController {
 
   @Post()
   async create(
-    @Body() createClientDto: CreateClientDto,
+    @Body() createClientDto: Prisma.ClientCreateInput,
   ): Promise<Client | null> {
     return await this.clientService.create(createClientDto);
   }
@@ -38,7 +36,7 @@ export class ClientController {
   @Patch(':id')
   async update(
     @Param('id') id: number,
-    @Body() updateClientDto: UpdateClientDto,
+    @Body() updateClientDto: Prisma.ClientUpdateInput,
   ): Promise<Client | null> {
     return await this.clientService.update(id, updateClientDto);
   }

@@ -7,10 +7,9 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
-import { UpdateDriverDto } from 'src/prisma-generated/update-driver.dto';
 import { DriverService } from './driver.service';
-import { CreateDriverDto } from '../prisma-generated/create-driver.dto';
 import { ApiTags } from '@nestjs/swagger';
+import { Prisma } from '@prisma/client';
 
 @ApiTags('Drivers')
 @Controller('driver')
@@ -18,7 +17,7 @@ export class DriverController {
   constructor(private readonly driverService: DriverService) {}
 
   @Post()
-  create(@Body() createDriverDto: CreateDriverDto) {
+  create(@Body() createDriverDto: Prisma.DriverCreateInput) {
     return this.driverService.create(createDriverDto);
   }
 
@@ -33,7 +32,10 @@ export class DriverController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: number, @Body() updateDriverDto: UpdateDriverDto) {
+  update(
+    @Param('id') id: number,
+    @Body() updateDriverDto: Prisma.DriverUpdateInput,
+  ) {
     return this.driverService.update(id, updateDriverDto);
   }
 

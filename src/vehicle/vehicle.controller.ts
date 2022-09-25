@@ -8,9 +8,8 @@ import {
   Delete,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { CreateVehicleDto } from 'src/prisma-generated/create-vehicle.dto';
-import { UpdateVehicleDto } from 'src/prisma-generated/update-vehicle.dto';
 import { VehicleService } from './vehicle.service';
+import { Prisma } from '@prisma/client';
 
 @ApiTags('Vehicles')
 @Controller('vehicle')
@@ -18,7 +17,7 @@ export class VehicleController {
   constructor(private readonly vehicleService: VehicleService) {}
 
   @Post()
-  create(@Body() createVehicleDto: CreateVehicleDto) {
+  create(@Body() createVehicleDto: Prisma.VehicleCreateInput) {
     return this.vehicleService.create(createVehicleDto);
   }
 
@@ -33,7 +32,10 @@ export class VehicleController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: number, @Body() updateVehicleDto: UpdateVehicleDto) {
+  update(
+    @Param('id') id: number,
+    @Body() updateVehicleDto: Prisma.VehicleUpdateInput,
+  ) {
     return this.vehicleService.update(id, updateVehicleDto);
   }
 
