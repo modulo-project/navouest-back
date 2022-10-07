@@ -16,11 +16,10 @@ import { Prisma } from '.prisma/client';
 export class TripController {
   constructor(private readonly tripService: TripService) {}
 
-  // TODO: Passer les data en paramètres de la fonction create sans
-  // oublier de bien spécifier le type de retour de la fonction et le type des données
+  // TODO: bien spécifier le type de retour de la fonction et le type des données
   @Post()
-  create() {
-    return this.tripService.create();
+  create(@Body() data: Prisma.StepCreateManyTripInput[]) {
+    return this.tripService.create(data);
   }
 
   @Get()

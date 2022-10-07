@@ -9,46 +9,17 @@ export class TripService {
     private readonly prismaService: PrismaService,
     private readonly googleService: GoogleService,
   ) {}
-
-  // TODO: Récupérer les données depuis le controller et les passer à la fonction pour récupérer
-  // la distance de chaque étape avant de sauvegarder le trajet et toutes ses étapes
-  async create() {
-    const body: Prisma.StepCreateManyTripInput[] = [
-      {
-        startedAt: new Date(Date.now()),
-        endedAt: new Date(Date.now()),
-        from: 'Paris',
-        to: 'Lyon',
-      },
-      {
-        startedAt: new Date(Date.now()),
-        endedAt: new Date(Date.now()),
-        from: 'Lyon',
-        to: 'Marseille',
-      },
-      {
-        startedAt: new Date(Date.now()),
-        endedAt: new Date(Date.now()),
-        from: 'Marseille',
-        to: 'Paris',
-      },
-    ];
-
-    for (let i = 0; i < body.length; i++) {
-      body[i].distance = await this.googleService.getDistance(
-        body[i].from,
-        body[i].to,
+  async create(data: Prisma.StepCreateManyTripInput[]) {
+    for (let i = 0; i < data.length; i++) {
+      data[i].distance = await this.googleService.getDistance(
+        data[i].from,
+        data[i].to,
       );
     }
 
-    const newTrip: Prisma.TripUncheckedCreateInput = {
-      steps: {
-        createMany: {
-          data: body,
-        },
-      },
-    };
-    return this.prismaService.trip.create({ data: newTrip });
+    return this.prismaService.trip.create({
+      data: { steps: { createMany: { data } } },
+    });
   }
 
   findAll() {
