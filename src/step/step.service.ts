@@ -1,14 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { GoogleService } from '../google/google.service';
 
 @Injectable()
 export class StepService {
-  constructor(
-    private readonly prismaService: PrismaService,
-    private googleService: GoogleService,
-  ) {}
+  constructor(private readonly prismaService: PrismaService) {}
 
   async create(createStepDto: Prisma.StepCreateInput) {
     await this.prismaService.step.create({ data: createStepDto });
