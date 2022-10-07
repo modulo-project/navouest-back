@@ -15,6 +15,16 @@ export class TripService {
         data[i].from,
         data[i].to,
       );
+
+      // If commentary exist save it to the database
+      if (data[i].commentary) {
+        data[i].commentary === data[i].commentary;
+      }
+
+      // Save number of passengers if exist
+      if (data[i].passengersCount) {
+        data[i].passengersCount === data[i].passengersCount;
+      }
     }
 
     return this.prismaService.trip.create({
